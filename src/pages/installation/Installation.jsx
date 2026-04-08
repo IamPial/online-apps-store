@@ -1,7 +1,12 @@
 import React from "react";
+import AppDetails from "../../ui/AppDetails";
 
 const Installation = () => {
-  return <div></div>;
+  return (
+    <div>
+      <AppDetails />
+    </div>
+  );
 };
 
 export default Installation;
