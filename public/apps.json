@@ -1,0 +1,578 @@
+[
+  {
+    "id": 1,
+    "name": "Jira",
+    "developer": "Atlassian",
+    "icon": "https://i.ibb.co.com/tpMGCyZ5/jira.webp",
+    "size_mb": 112,
+    "rating": 4.3,
+    "stats": {
+      "downloads": "10M",
+      "total_reviews": "320K"
+    },
+    "ratings_breakdown": {
+      "5_star": 160000,
+      "4_star": 85000,
+      "3_star": 42000,
+      "2_star": 21000,
+      "1_star": 12000
+    },
+    "description": "Jira is the #1 project management tool for agile teams. Plan sprints, track bugs, manage backlogs, and ship great software faster. Integrates seamlessly with GitHub, Confluence, Slack, and 3,000+ apps.",
+    "category": "Productivity",
+    "platforms": ["iOS", "Android", "Web"],
+    "install_label": "Install Now"
+  },
+  {
+    "id": 2,
+    "name": "ChatGPT",
+    "developer": "OpenAI",
+    "icon": "https://i.ibb.co.com/dwCBVTJK/chat-GPT.jpg",
+    "size_mb": 185,
+    "rating": 4.8,
+    "stats": {
+      "downloads": "770M",
+      "total_reviews": "2.1M"
+    },
+    "ratings_breakdown": {
+      "5_star": 980000,
+      "4_star": 520000,
+      "3_star": 210000,
+      "2_star": 95000,
+      "1_star": 60000
+    },
+    "description": "ChatGPT is an AI-powered assistant that helps you write, research, brainstorm, translate, and code. Powered by GPT-4o, it adapts to your needs with real-time web search, image generation, and voice conversation features.",
+    "category": "AI & Productivity",
+    "platforms": ["iOS", "Android", "Web"],
+    "install_label": "Install Now"
+  },
+  {
+    "id": 3,
+    "name": "Canva: Design, Photo & Video",
+    "developer": "Canva Pty Ltd",
+    "icon": "https://i.ibb.co.com/KRxFVxn/canva.jpg",
+    "size_mb": 312,
+    "rating": 4.8,
+    "stats": {
+      "downloads": "200M",
+      "total_reviews": "1.4M"
+    },
+    "ratings_breakdown": {
+      "5_star": 850000,
+      "4_star": 380000,
+      "3_star": 95000,
+      "2_star": 41000,
+      "1_star": 22000
+    },
+    "description": "Canva is the world's most popular design platform. Create stunning social media posts, presentations, posters, logos, and videos using thousands of templates. AI-powered tools make professional design easy for everyone.",
+    "category": "Design & Creativity",
+    "platforms": ["iOS", "Android", "Web"],
+    "install_label": "Install Now"
+  },
+  {
+    "id": 4,
+    "name": "Duolingo: Language Lessons",
+    "developer": "Duolingo, Inc.",
+    "icon": "https://i.ibb.co.com/99BXLNdz/duolingo.jpg",
+    "size_mb": 220,
+    "rating": 4.7,
+    "stats": {
+      "downloads": "500M",
+      "total_reviews": "3.2M"
+    },
+    "ratings_breakdown": {
+      "5_star": 1900000,
+      "4_star": 780000,
+      "3_star": 280000,
+      "2_star": 130000,
+      "1_star": 75000
+    },
+    "description": "Duolingo is the world's most popular way to learn a language. Practice Spanish, French, German, Japanese, and 40+ more languages with fun, bite-sized lessons powered by AI tutors and gamified streaks.",
+    "category": "Education",
+    "platforms": ["iOS", "Android"],
+    "install_label": "Install Now"
+  },
+  {
+    "id": 5,
+    "name": "Spotify: Music & Podcasts",
+    "developer": "Spotify AB",
+    "icon": "https://i.ibb.co.com/G4Lc8w8J/spotify.jpg",
+    "size_mb": 198,
+    "rating": 4.6,
+    "stats": {
+      "downloads": "626M",
+      "total_reviews": "5.8M"
+    },
+    "ratings_breakdown": {
+      "5_star": 3200000,
+      "4_star": 1500000,
+      "3_star": 620000,
+      "2_star": 310000,
+      "1_star": 180000
+    },
+    "description": "Spotify is the leading audio streaming platform with over 100 million songs and 5 million podcasts. Discover new music with personalized playlists like Discover Weekly and Daily Mix. Enjoy offline listening with Premium.",
+    "category": "Music & Audio",
+    "platforms": ["iOS", "Android"],
+    "install_label": "Install Now"
+  },
+  {
+    "id": 6,
+    "name": "TikTok",
+    "developer": "ByteDance",
+    "icon": "https://i.ibb.co.com/pvmzV11Y/tiktok.jpg",
+    "size_mb": 245,
+    "rating": 4.7,
+    "stats": {
+      "downloads": "43.1M",
+      "total_reviews": "4.5M"
+    },
+    "ratings_breakdown": {
+      "5_star": 2800000,
+      "4_star": 1100000,
+      "3_star": 380000,
+      "2_star": 120000,
+      "1_star": 95000
+    },
+    "description": "TikTok is the world's leading short-form video platform. Create, share, and discover entertaining videos with powerful editing tools, filters, and an AI-powered For You feed.",
+    "category": "Social Media",
+    "platforms": ["iOS", "Android"],
+    "install_label": "Install Now"
+  },
+  {
+    "id": 7,
+    "name": "Instagram",
+    "developer": "Meta Platforms",
+    "icon": "https://i.ibb.co.com/ksQTq5vw/instagram.jpg",
+    "size_mb": 210,
+    "rating": 4.6,
+    "stats": {
+      "downloads": "41.8M",
+      "total_reviews": "6.2M"
+    },
+    "ratings_breakdown": {
+      "5_star": 3500000,
+      "4_star": 1600000,
+      "3_star": 620000,
+      "2_star": 280000,
+      "1_star": 190000
+    },
+    "description": "Instagram is a visual-first social media platform for sharing photos, reels, and stories. Connect with creators, discover brands, and grow your audience with powerful tools for content creation and marketing.",
+    "category": "Social Media",
+    "platforms": ["iOS", "Android"],
+    "install_label": "Install Now"
+  },
+  {
+    "id": 8,
+    "name": "WhatsApp Messenger",
+    "developer": "Meta Platforms",
+    "icon": "https://i.ibb.co.com/mCzHQbrv/whatsapp.jpg",
+    "size_mb": 175,
+    "rating": 4.7,
+    "stats": {
+      "downloads": "31M",
+      "total_reviews": "8.1M"
+    },
+    "ratings_breakdown": {
+      "5_star": 4900000,
+      "4_star": 1900000,
+      "3_star": 750000,
+      "2_star": 310000,
+      "1_star": 210000
+    },
+    "description": "WhatsApp is the world's most popular messaging app. Send texts, voice messages, make HD video calls, share media, and stay connected with end-to-end encryption for privacy.",
+    "category": "Messaging",
+    "platforms": ["iOS", "Android"],
+    "install_label": "Install Now"
+  },
+  {
+    "id": 9,
+    "name": "Google Gemini",
+    "developer": "Google LLC",
+    "icon": "https://i.ibb.co.com/7dxs3Smp/gemini.jpg",
+    "size_mb": 160,
+    "rating": 4.7,
+    "stats": {
+      "downloads": "200M",
+      "total_reviews": "1.8M"
+    },
+    "ratings_breakdown": {
+      "5_star": 1100000,
+      "4_star": 480000,
+      "3_star": 140000,
+      "2_star": 55000,
+      "1_star": 32000
+    },
+    "description": "Google Gemini is an advanced AI assistant integrated across Android and Google Workspace. Generate content, summarize documents, analyze images, and automate tasks with multimodal AI capabilities.",
+    "category": "AI & Productivity",
+    "platforms": ["iOS", "Android"],
+    "install_label": "Install Now"
+  },
+  {
+    "id": 10,
+    "name": "YouTube",
+    "developer": "Google LLC",
+    "icon": "https://i.ibb.co.com/hxF2ZfMw/youtube.jpg",
+    "size_mb": 230,
+    "rating": 4.7,
+    "stats": {
+      "downloads": "2B",
+      "total_reviews": "12.4M"
+    },
+    "ratings_breakdown": {
+      "5_star": 7500000,
+      "4_star": 3200000,
+      "3_star": 1100000,
+      "2_star": 420000,
+      "1_star": 310000
+    },
+    "description": "YouTube is the world's largest video platform. Watch, upload, and share videos across every topic. Enjoy YouTube Premium for ad-free viewing, background play, and exclusive original content.",
+    "category": "Entertainment",
+    "platforms": ["iOS", "Android"],
+    "install_label": "Install Now"
+  },
+  {
+    "id": 11,
+    "name": "Facebook",
+    "developer": "Meta Platforms",
+    "icon": "https://i.ibb.co.com/rGSfJw9w/facebook.jpg",
+    "size_mb": 205,
+    "rating": 4.4,
+    "stats": {
+      "downloads": "35.5M",
+      "total_reviews": "9.3M"
+    },
+    "ratings_breakdown": {
+      "5_star": 4800000,
+      "4_star": 2600000,
+      "3_star": 1100000,
+      "2_star": 520000,
+      "1_star": 380000
+    },
+    "description": "Facebook connects billions of people worldwide. Share updates, join groups, watch reels, follow pages, and discover events in your community. AI-powered feed keeps you updated on what matters most.",
+    "category": "Social Media",
+    "platforms": ["iOS", "Android"],
+    "install_label": "Install Now"
+  },
+  {
+    "id": 12,
+    "name": "Telegram",
+    "developer": "Telegram FZ-LLC",
+    "icon": "https://i.ibb.co.com/DfJLt0D0/telegram.jpg",
+    "size_mb": 155,
+    "rating": 4.6,
+    "stats": {
+      "downloads": "900M",
+      "total_reviews": "3.7M"
+    },
+    "ratings_breakdown": {
+      "5_star": 2200000,
+      "4_star": 890000,
+      "3_star": 320000,
+      "2_star": 150000,
+      "1_star": 98000
+    },
+    "description": "Telegram is a cloud-based messaging app with a strong focus on speed and privacy. Supports large group chats, channels, bots, file sharing up to 4GB, and end-to-end encrypted secret chats.",
+    "category": "Messaging",
+    "platforms": ["iOS", "Android", "Web"],
+    "install_label": "Install Now"
+  },
+  {
+    "id": 13,
+    "name": "Netflix",
+    "developer": "Netflix, Inc.",
+    "icon": "https://i.ibb.co.com/mVV05kSS/netflix.jpg",
+    "size_mb": 268,
+    "rating": 4.5,
+    "stats": {
+      "downloads": "300M",
+      "total_reviews": "7.6M"
+    },
+    "ratings_breakdown": {
+      "5_star": 4100000,
+      "4_star": 2100000,
+      "3_star": 820000,
+      "2_star": 340000,
+      "1_star": 260000
+    },
+    "description": "Netflix is the world's leading streaming service with thousands of movies, TV shows, documentaries, and Netflix Originals. Stream in 4K on any device with offline download support.",
+    "category": "Entertainment",
+    "platforms": ["iOS", "Android"],
+    "install_label": "Install Now"
+  },
+  {
+    "id": 14,
+    "name": "Threads",
+    "developer": "Meta Platforms",
+    "icon": "https://i.ibb.co.com/rffV6sqr/threads.jpg",
+    "size_mb": 148,
+    "rating": 4.5,
+    "stats": {
+      "downloads": "400M",
+      "total_reviews": "1.2M"
+    },
+    "ratings_breakdown": {
+      "5_star": 680000,
+      "4_star": 310000,
+      "3_star": 120000,
+      "2_star": 58000,
+      "1_star": 42000
+    },
+    "description": "Threads is Meta's text-based social media platform for real-time conversations. Share short posts, follow trending topics, and engage with a global community closely integrated with Instagram.",
+    "category": "Social Media",
+    "platforms": ["iOS", "Android"],
+    "install_label": "Install Now"
+  },
+  {
+    "id": 15,
+    "name": "Amazon Shopping",
+    "developer": "Amazon.com",
+    "icon": "https://i.ibb.co.com/6ct5YpPY/amazon.jpg",
+    "size_mb": 192,
+    "rating": 4.6,
+    "stats": {
+      "downloads": "200M",
+      "total_reviews": "5.1M"
+    },
+    "ratings_breakdown": {
+      "5_star": 2900000,
+      "4_star": 1400000,
+      "3_star": 490000,
+      "2_star": 180000,
+      "1_star": 140000
+    },
+    "description": "Amazon Shopping lets you browse millions of products, track orders, and enjoy fast delivery with Prime. AR View lets you visualize products in your space before buying.",
+    "category": "E-Commerce",
+    "platforms": ["iOS", "Android"],
+    "install_label": "Install Now"
+  },
+  {
+    "id": 16,
+    "name": "Temu",
+    "developer": "PDD Holdings",
+    "icon": "https://i.ibb.co.com/J6MzVHM/temu.jpg",
+    "size_mb": 178,
+    "rating": 4.5,
+    "stats": {
+      "downloads": "300M",
+      "total_reviews": "2.8M"
+    },
+    "ratings_breakdown": {
+      "5_star": 1600000,
+      "4_star": 720000,
+      "3_star": 260000,
+      "2_star": 120000,
+      "1_star": 85000
+    },
+    "description": "Temu is a fast-growing global shopping app offering a massive range of products at competitive prices. Daily deals, flash sales, and free shipping make it one of the most downloaded shopping apps worldwide.",
+    "category": "E-Commerce",
+    "platforms": ["iOS", "Android"],
+    "install_label": "Install Now"
+  },
+  {
+    "id": 17,
+    "name": "Notion",
+    "developer": "Notion Labs",
+    "icon": "https://i.ibb.co.com/4RtmrsbN/notion.jpg",
+    "size_mb": 168,
+    "rating": 4.7,
+    "stats": {
+      "downloads": "100M",
+      "total_reviews": "980K"
+    },
+    "ratings_breakdown": {
+      "5_star": 580000,
+      "4_star": 260000,
+      "3_star": 88000,
+      "2_star": 32000,
+      "1_star": 18000
+    },
+    "description": "Notion is an all-in-one workspace for notes, wikis, databases, and project management. AI-powered writing tools, drag-and-drop pages, and real-time collaboration make it a productivity powerhouse.",
+    "category": "Productivity",
+    "platforms": ["iOS", "Android", "Web"],
+    "install_label": "Install Now"
+  },
+  {
+    "id": 18,
+    "name": "Microsoft Copilot",
+    "developer": "Microsoft Corporation",
+    "icon": "https://i.ibb.co.com/mrfC2qMh/copilot.jpg",
+    "size_mb": 152,
+    "rating": 4.6,
+    "stats": {
+      "downloads": "100M",
+      "total_reviews": "720K"
+    },
+    "ratings_breakdown": {
+      "5_star": 420000,
+      "4_star": 185000,
+      "3_star": 72000,
+      "2_star": 28000,
+      "1_star": 15000
+    },
+    "description": "Microsoft Copilot is an AI assistant embedded across Microsoft 365 tools. Automate documentation, generate content, analyze data in Excel, and draft emails with intelligent context-aware suggestions.",
+    "category": "AI & Productivity",
+    "platforms": ["iOS", "Android", "Web"],
+    "install_label": "Install Now"
+  },
+  {
+    "id": 19,
+    "name": "Slack",
+    "developer": "Salesforce",
+    "icon": "https://i.ibb.co.com/B2vrx315/slack.jpg",
+    "size_mb": 182,
+    "rating": 4.5,
+    "stats": {
+      "downloads": "65M",
+      "total_reviews": "1.1M"
+    },
+    "ratings_breakdown": {
+      "5_star": 620000,
+      "4_star": 290000,
+      "3_star": 110000,
+      "2_star": 48000,
+      "1_star": 32000
+    },
+    "description": "Slack is a team communication platform with AI-powered message summaries, Focus Mode, and Voice Huddles. Organize conversations in channels, automate workflows, and integrate with 2,600+ apps.",
+    "category": "Productivity",
+    "platforms": ["iOS", "Android", "Web"],
+    "install_label": "Install Now"
+  },
+  {
+    "id": 20,
+    "name": "Uber Eats",
+    "developer": "Uber Technologies",
+    "icon": "https://i.ibb.co.com/J8Kf8jf/uber.jpg",
+    "size_mb": 195,
+    "rating": 4.5,
+    "stats": {
+      "downloads": "100M",
+      "total_reviews": "3.4M"
+    },
+    "ratings_breakdown": {
+      "5_star": 1900000,
+      "4_star": 950000,
+      "3_star": 340000,
+      "2_star": 130000,
+      "1_star": 95000
+    },
+    "description": "Uber Eats delivers food from your favorite restaurants straight to your door. AI-powered predictive ordering, real-time tracking, and exclusive deals make every meal effortless.",
+    "category": "Food & Delivery",
+    "platforms": ["iOS", "Android"],
+    "install_label": "Install Now"
+  },
+  {
+    "id": 21,
+    "name": "Revolut",
+    "developer": "Revolut Ltd",
+    "icon": "https://i.ibb.co.com/1t2DqnTP/revolut.jpg",
+    "size_mb": 162,
+    "rating": 4.6,
+    "stats": {
+      "downloads": "50M",
+      "total_reviews": "890K"
+    },
+    "ratings_breakdown": {
+      "5_star": 520000,
+      "4_star": 230000,
+      "3_star": 82000,
+      "2_star": 33000,
+      "1_star": 22000
+    },
+    "description": "Revolut is a digital banking app for multi-currency accounts, international transfers, stock trading, and crypto. Smart budgeting tools and instant spending notifications help manage your finances.",
+    "category": "Fintech",
+    "platforms": ["iOS", "Android"],
+    "install_label": "Install Now"
+  },
+  {
+    "id": 22,
+    "name": "Robinhood",
+    "developer": "Robinhood Markets",
+    "icon": "https://i.ibb.co.com/MkBvhYB4/robinhood.png",
+    "size_mb": 158,
+    "rating": 4.3,
+    "stats": {
+      "downloads": "22M",
+      "total_reviews": "640K"
+    },
+    "ratings_breakdown": {
+      "5_star": 340000,
+      "4_star": 160000,
+      "3_star": 78000,
+      "2_star": 38000,
+      "1_star": 25000
+    },
+    "description": "Robinhood offers commission-free stock, ETF, options, and crypto trading. Real-time market data, fractional shares, and an intuitive UI make investing accessible for beginners and experts alike.",
+    "category": "Fintech",
+    "platforms": ["iOS", "Android"],
+    "install_label": "Install Now"
+  },
+  {
+    "id": 23,
+    "name": "Strava",
+    "developer": "Strava, Inc.",
+    "icon": "https://i.ibb.co.com/ynhFYPb5/Strava.jpg",
+    "size_mb": 172,
+    "rating": 4.6,
+    "stats": {
+      "downloads": "120M",
+      "total_reviews": "1.5M"
+    },
+    "ratings_breakdown": {
+      "5_star": 880000,
+      "4_star": 410000,
+      "3_star": 130000,
+      "2_star": 55000,
+      "1_star": 35000
+    },
+    "description": "Strava is the ultimate activity tracking app for runners, cyclists, and outdoor athletes. Log workouts, analyze performance stats, join challenges, and connect with a global community of 120M+ athletes.",
+    "category": "Health & Fitness",
+    "platforms": ["iOS", "Android"],
+    "install_label": "Install Now"
+  },
+
+  {
+    "id": 24,
+    "name": "Headspace",
+    "developer": "Headspace Health",
+    "icon": "https://i.ibb.co.com/9mDxbVwz/Headspace.webp",
+    "size_mb": 145,
+    "rating": 4.7,
+    "stats": {
+      "downloads": "70M",
+      "total_reviews": "820K"
+    },
+    "ratings_breakdown": {
+      "5_star": 490000,
+      "4_star": 210000,
+      "3_star": 72000,
+      "2_star": 28000,
+      "1_star": 18000
+    },
+    "description": "Headspace is a leading meditation and mindfulness app with guided sessions for stress, anxiety, sleep, and focus. AI-powered daily recommendations personalize your mental wellness journey.",
+    "category": "Health & Wellness",
+    "platforms": ["iOS", "Android"],
+    "install_label": "Install Now"
+  },
+  {
+    "id": 25,
+    "name": "AllTrails",
+    "developer": "AllTrails, LLC",
+    "icon": "https://i.ibb.co.com/ZzYVr45z/alltrails.webp",
+    "size_mb": 188,
+    "rating": 4.8,
+    "stats": {
+      "downloads": "50M",
+      "total_reviews": "610K"
+    },
+    "ratings_breakdown": {
+      "5_star": 380000,
+      "4_star": 155000,
+      "3_star": 48000,
+      "2_star": 18000,
+      "1_star": 10000
+    },
+    "description": "AllTrails is the go-to hiking and trail navigation app with 400,000+ trails worldwide. Offline maps, custom routes, community reviews, and Outdoor Lens AR help you explore nature safely.",
+    "category": "Travel & Outdoors",
+    "platforms": ["iOS", "Android"],
+    "install_label": "Install Now"
+  }
+]
