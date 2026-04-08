@@ -1,6 +1,7 @@
 import React from "react";
 import { useLoaderData } from "react-router";
-
+import { FaStar } from "react-icons/fa";
+import { HiOutlineDownload } from "react-icons/hi";
 const Apps = () => {
   const data = useLoaderData();
   console.log(data);
@@ -35,6 +36,35 @@ const Apps = () => {
             </svg>
             <input type="search" placeholder="Search" />
           </label>
+        </div>
+
+        <div className="grid grid-cols-4 gap-4">
+          <div className="card bg-base-100 p-4 shadow-none hover:shadow-2xl transition-all border duration-300 scale-95 hover:scale-100">
+            <figure className="mb-4">
+              <img
+                className="h-60 rounded-lg"
+                src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp"
+                alt="Shoes"
+              />
+            </figure>
+            <div className="card-body p-0 space-y-4">
+              <h2 className="card-title">Forest: Focus for Productivity</h2>
+              <div className="flex justify-between items-center gap-30">
+                <p className="bg-[#f1f5e8] flex justify-evenly items-center p-2 rounded-lg ">
+                  <HiOutlineDownload className="text-[16px] text-[#00D390] " />
+                  <span className="text-[16px] font-medium  text-[#00D390]">
+                    9M
+                  </span>
+                </p>
+                <p className="bg-[#fff0e1] flex justify-evenly items-center p-2  rounded-lg">
+                  <FaStar className="text-[#FF8811] " />
+                  <span className="text-[16px] font-medium  text-[#FF8811]">
+                    5
+                  </span>
+                </p>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
