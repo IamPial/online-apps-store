@@ -13,7 +13,7 @@ const AppFoundErrorPage = () => {
           another apps
         </p>
         <Link
-          to="/apps"
+          to="/"
           className="btn btn-lg text-white bg-linear-to-r from-[#632EE3] to-[#9F62F2]"
         >
           Go Back!
