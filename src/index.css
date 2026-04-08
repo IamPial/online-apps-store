@@ -7,3 +7,8 @@
 * {
   font-family: "Inter", sans-serif;
 }
+
+.menu {
+  --menu-active-fg: none;
+  --menu-active-bg: none;
+}
