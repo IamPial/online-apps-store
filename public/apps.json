@@ -3,7 +3,7 @@
     "id": 1,
     "name": "Jira",
     "developer": "Atlassian",
-    "icon": "https://i.ibb.co.com/tpMGCyZ5/jira.webp",
+    "icon": "https://i.ibb.co.com/C35VC68t/jira.png",
     "size_mb": 112,
     "rating": 4.3,
     "stats": {
@@ -49,7 +49,7 @@
     "id": 3,
     "name": "Canva: Design, Photo & Video",
     "developer": "Canva Pty Ltd",
-    "icon": "https://i.ibb.co.com/KRxFVxn/canva.jpg",
+    "icon": "https://i.ibb.co.com/bgWRqQC5/canva.jpg",
     "size_mb": 312,
     "rating": 4.8,
     "stats": {
@@ -348,7 +348,7 @@
     "id": 16,
     "name": "Temu",
     "developer": "PDD Holdings",
-    "icon": "https://i.ibb.co.com/J6MzVHM/temu.jpg",
+    "icon": "https://i.ibb.co.com/RZwDm5R/temu.png",
     "size_mb": 178,
     "rating": 4.5,
     "stats": {
@@ -509,7 +509,7 @@
     "id": 23,
     "name": "Strava",
     "developer": "Strava, Inc.",
-    "icon": "https://i.ibb.co.com/ynhFYPb5/Strava.jpg",
+    "icon": "https://i.ibb.co.com/LdSTxhjk/strava.avif",
     "size_mb": 172,
     "rating": 4.6,
     "stats": {
