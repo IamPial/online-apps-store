@@ -1,7 +1,8 @@
 import React, { useState } from "react";
-import { useLoaderData } from "react-router";
+import { Link, useLoaderData } from "react-router";
 import { FaStar } from "react-icons/fa";
 import { HiOutlineDownload } from "react-icons/hi";
+import AppFoundErrorPage from "../NotFoundPage/AppFoundErrorPage";
 const Apps = () => {
   const data = useLoaderData();
   const [searchItem, setSearchItem] = useState("");
@@ -11,6 +12,8 @@ const Apps = () => {
   );
   const allData = search.length > 0 ? search : data;
   const errorMessage = searchItem.length > 0 && search.length === 0;
+  const dataLength = 0;
+
   return (
     <div>
       <div className="container mx-auto py-20">
@@ -21,7 +24,9 @@ const Apps = () => {
           </p>
         </div>
         <div className="flex justify-between items-center py-10">
-          <h2 className="text-2xl font-semibold">({data.length}) Apps Found</h2>
+          <h2 className="text-2xl font-semibold">
+            ({errorMessage ? dataLength : allData.length}) Apps Found
+          </h2>
           <label className="input">
             <svg
               className="h-[1em] opacity-50"
@@ -49,7 +54,7 @@ const Apps = () => {
 
         <div>
           {errorMessage ? (
-            <p>Heelo Me</p>
+            <AppFoundErrorPage />
           ) : (
             <div className="grid grid-cols-4 gap-4">
               {allData.map((cardData, index) => {
@@ -88,41 +93,6 @@ const Apps = () => {
             </div>
           )}
         </div>
-        {/* <div className="grid grid-cols-4 gap-4">
-          {allData.map((cardData, index) => {
-            return (
-              <div
-                key={index}
-                className="card bg-base-100 p-4 shadow-none hover:shadow-2xl transition-all duration-300 scale-95 hover:scale-100"
-              >
-                <figure className="mb-4">
-                  <img
-                    className="h-60 rounded-lg"
-                    src={cardData.icon}
-                    alt="Shoes"
-                  />
-                </figure>
-                <div className="card-body p-0 space-y-4">
-                  <h2 className="card-title">{cardData.name}</h2>
-                  <div className="flex justify-between items-center gap-30">
-                    <p className="bg-[#f1f5e8] flex justify-evenly items-center p-2 rounded-lg ">
-                      <HiOutlineDownload className="text-[16px] text-[#00D390] " />
-                      <span className="text-[16px] font-medium  text-[#00D390]">
-                        {cardData.stats.downloads}
-                      </span>
-                    </p>
-                    <p className="bg-[#fff0e1] flex justify-evenly items-center p-2  rounded-lg">
-                      <FaStar className="text-[#FF8811] " />
-                      <span className="text-[16px] font-medium  text-[#FF8811]">
-                        {cardData.rating}
-                      </span>
-                    </p>
-                  </div>
-                </div>
-              </div>
-            );
-          })}
-        </div> */}
       </div>
     </div>
   );
