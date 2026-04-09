@@ -8,11 +8,11 @@ const Apps = () => {
   const data = useLoaderData();
 
   //generating bar chartData
-  const [selectId, setSelectId] = useState(data[0].id);
+  const [selectId, setSelectId] = useState(null);
 
   const obj = data.find((item) => item.id === selectId);
 
-  const barChartData = Object.entries(obj.ratings_breakdown).map(
+  const barChartData = Object.entries(obj?.ratings_breakdown || {}).map(
     ([key, value]) => ({
       star: key.replace("_star", " star"),
       count: value,
@@ -84,11 +84,7 @@ const Apps = () => {
             </div>
           )}
         </div>
-        {selectId.length < 0 ? (
-          <AppDetails obj={obj} barChartData={barChartData} />
-        ) : (
-          ""
-        )}
+        {obj && <AppDetails obj={obj} barChartData={barChartData} />}
       </div>
     </div>
   );
