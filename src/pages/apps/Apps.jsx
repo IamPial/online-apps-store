@@ -3,12 +3,14 @@ import { useLoaderData } from "react-router";
 
 import AppFoundErrorPage from "../NotFoundPage/AppFoundErrorPage";
 import Card from "../../ui/Card";
+import AppDetails from "../details/AppDetails";
 const Apps = () => {
   const data = useLoaderData();
+
+  //generating bar chartData
   const [selectId, setSelectId] = useState(data[0].id);
 
   const obj = data.find((item) => item.id === selectId);
-  console.log("this is app", obj);
 
   const barChartData = Object.entries(obj.ratings_breakdown).map(
     ([key, value]) => ({
@@ -16,10 +18,8 @@ const Apps = () => {
       count: value,
     }),
   );
-  console.log(barChartData);
 
-  console.log(selectId, typeof selectId);
-
+  // for search functionality
   const [searchItem, setSearchItem] = useState("");
 
   const search = data.filter((searchingData) =>
@@ -73,11 +73,22 @@ const Apps = () => {
           ) : (
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 px-4 md:px-0">
               {allData.map((cardData) => {
-                return <Card key={cardData.id} cardData={cardData}></Card>;
+                return (
+                  <Card
+                    key={cardData.id}
+                    cardData={cardData}
+                    setSelectId={setSelectId}
+                  ></Card>
+                );
               })}
             </div>
           )}
         </div>
+        {selectId.length < 0 ? (
+          <AppDetails obj={obj} barChartData={barChartData} />
+        ) : (
+          ""
+        )}
       </div>
     </div>
   );
