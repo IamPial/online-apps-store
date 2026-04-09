@@ -19,7 +19,6 @@
     },
     "description": "Jira is the #1 project management tool for agile teams. Plan sprints, track bugs, manage backlogs, and ship great software faster. Integrates seamlessly with GitHub, Confluence, Slack, and 3,000+ apps.",
     "category": "Productivity",
-    "platforms": ["iOS", "Android", "Web"],
     "install_label": "Install Now"
   },
   {
@@ -42,7 +41,6 @@
     },
     "description": "ChatGPT is an AI-powered assistant that helps you write, research, brainstorm, translate, and code. Powered by GPT-4o, it adapts to your needs with real-time web search, image generation, and voice conversation features.",
     "category": "AI & Productivity",
-    "platforms": ["iOS", "Android", "Web"],
     "install_label": "Install Now"
   },
   {
@@ -65,7 +63,6 @@
     },
     "description": "Canva is the world's most popular design platform. Create stunning social media posts, presentations, posters, logos, and videos using thousands of templates. AI-powered tools make professional design easy for everyone.",
     "category": "Design & Creativity",
-    "platforms": ["iOS", "Android", "Web"],
     "install_label": "Install Now"
   },
   {
@@ -88,7 +85,6 @@
     },
     "description": "Duolingo is the world's most popular way to learn a language. Practice Spanish, French, German, Japanese, and 40+ more languages with fun, bite-sized lessons powered by AI tutors and gamified streaks.",
     "category": "Education",
-    "platforms": ["iOS", "Android"],
     "install_label": "Install Now"
   },
   {
@@ -111,7 +107,6 @@
     },
     "description": "Spotify is the leading audio streaming platform with over 100 million songs and 5 million podcasts. Discover new music with personalized playlists like Discover Weekly and Daily Mix. Enjoy offline listening with Premium.",
     "category": "Music & Audio",
-    "platforms": ["iOS", "Android"],
     "install_label": "Install Now"
   },
   {
@@ -134,7 +129,6 @@
     },
     "description": "TikTok is the world's leading short-form video platform. Create, share, and discover entertaining videos with powerful editing tools, filters, and an AI-powered For You feed.",
     "category": "Social Media",
-    "platforms": ["iOS", "Android"],
     "install_label": "Install Now"
   },
   {
@@ -157,7 +151,6 @@
     },
     "description": "Instagram is a visual-first social media platform for sharing photos, reels, and stories. Connect with creators, discover brands, and grow your audience with powerful tools for content creation and marketing.",
     "category": "Social Media",
-    "platforms": ["iOS", "Android"],
     "install_label": "Install Now"
   },
   {
@@ -180,7 +173,6 @@
     },
     "description": "WhatsApp is the world's most popular messaging app. Send texts, voice messages, make HD video calls, share media, and stay connected with end-to-end encryption for privacy.",
     "category": "Messaging",
-    "platforms": ["iOS", "Android"],
     "install_label": "Install Now"
   },
   {
@@ -203,7 +195,6 @@
     },
     "description": "Google Gemini is an advanced AI assistant integrated across Android and Google Workspace. Generate content, summarize documents, analyze images, and automate tasks with multimodal AI capabilities.",
     "category": "AI & Productivity",
-    "platforms": ["iOS", "Android"],
     "install_label": "Install Now"
   },
   {
@@ -226,7 +217,6 @@
     },
     "description": "YouTube is the world's largest video platform. Watch, upload, and share videos across every topic. Enjoy YouTube Premium for ad-free viewing, background play, and exclusive original content.",
     "category": "Entertainment",
-    "platforms": ["iOS", "Android"],
     "install_label": "Install Now"
   },
   {
@@ -249,7 +239,6 @@
     },
     "description": "Facebook connects billions of people worldwide. Share updates, join groups, watch reels, follow pages, and discover events in your community. AI-powered feed keeps you updated on what matters most.",
     "category": "Social Media",
-    "platforms": ["iOS", "Android"],
     "install_label": "Install Now"
   },
   {
@@ -272,7 +261,6 @@
     },
     "description": "Telegram is a cloud-based messaging app with a strong focus on speed and privacy. Supports large group chats, channels, bots, file sharing up to 4GB, and end-to-end encrypted secret chats.",
     "category": "Messaging",
-    "platforms": ["iOS", "Android", "Web"],
     "install_label": "Install Now"
   },
   {
@@ -295,7 +283,6 @@
     },
     "description": "Netflix is the world's leading streaming service with thousands of movies, TV shows, documentaries, and Netflix Originals. Stream in 4K on any device with offline download support.",
     "category": "Entertainment",
-    "platforms": ["iOS", "Android"],
     "install_label": "Install Now"
   },
   {
@@ -318,7 +305,6 @@
     },
     "description": "Threads is Meta's text-based social media platform for real-time conversations. Share short posts, follow trending topics, and engage with a global community closely integrated with Instagram.",
     "category": "Social Media",
-    "platforms": ["iOS", "Android"],
     "install_label": "Install Now"
   },
   {
@@ -341,7 +327,6 @@
     },
     "description": "Amazon Shopping lets you browse millions of products, track orders, and enjoy fast delivery with Prime. AR View lets you visualize products in your space before buying.",
     "category": "E-Commerce",
-    "platforms": ["iOS", "Android"],
     "install_label": "Install Now"
   },
   {
@@ -364,7 +349,6 @@
     },
     "description": "Temu is a fast-growing global shopping app offering a massive range of products at competitive prices. Daily deals, flash sales, and free shipping make it one of the most downloaded shopping apps worldwide.",
     "category": "E-Commerce",
-    "platforms": ["iOS", "Android"],
     "install_label": "Install Now"
   },
   {
@@ -387,7 +371,6 @@
     },
     "description": "Notion is an all-in-one workspace for notes, wikis, databases, and project management. AI-powered writing tools, drag-and-drop pages, and real-time collaboration make it a productivity powerhouse.",
     "category": "Productivity",
-    "platforms": ["iOS", "Android", "Web"],
     "install_label": "Install Now"
   },
   {
@@ -410,7 +393,6 @@
     },
     "description": "Microsoft Copilot is an AI assistant embedded across Microsoft 365 tools. Automate documentation, generate content, analyze data in Excel, and draft emails with intelligent context-aware suggestions.",
     "category": "AI & Productivity",
-    "platforms": ["iOS", "Android", "Web"],
     "install_label": "Install Now"
   },
   {
@@ -433,7 +415,6 @@
     },
     "description": "Slack is a team communication platform with AI-powered message summaries, Focus Mode, and Voice Huddles. Organize conversations in channels, automate workflows, and integrate with 2,600+ apps.",
     "category": "Productivity",
-    "platforms": ["iOS", "Android", "Web"],
     "install_label": "Install Now"
   },
   {
@@ -456,7 +437,6 @@
     },
     "description": "Uber Eats delivers food from your favorite restaurants straight to your door. AI-powered predictive ordering, real-time tracking, and exclusive deals make every meal effortless.",
     "category": "Food & Delivery",
-    "platforms": ["iOS", "Android"],
     "install_label": "Install Now"
   },
   {
@@ -479,7 +459,6 @@
     },
     "description": "Revolut is a digital banking app for multi-currency accounts, international transfers, stock trading, and crypto. Smart budgeting tools and instant spending notifications help manage your finances.",
     "category": "Fintech",
-    "platforms": ["iOS", "Android"],
     "install_label": "Install Now"
   },
   {
@@ -502,7 +481,6 @@
     },
     "description": "Robinhood offers commission-free stock, ETF, options, and crypto trading. Real-time market data, fractional shares, and an intuitive UI make investing accessible for beginners and experts alike.",
     "category": "Fintech",
-    "platforms": ["iOS", "Android"],
     "install_label": "Install Now"
   },
   {
@@ -525,10 +503,8 @@
     },
     "description": "Strava is the ultimate activity tracking app for runners, cyclists, and outdoor athletes. Log workouts, analyze performance stats, join challenges, and connect with a global community of 120M+ athletes.",
     "category": "Health & Fitness",
-    "platforms": ["iOS", "Android"],
     "install_label": "Install Now"
   },
-
   {
     "id": 24,
     "name": "Headspace",
@@ -549,7 +525,6 @@
     },
     "description": "Headspace is a leading meditation and mindfulness app with guided sessions for stress, anxiety, sleep, and focus. AI-powered daily recommendations personalize your mental wellness journey.",
     "category": "Health & Wellness",
-    "platforms": ["iOS", "Android"],
     "install_label": "Install Now"
   },
   {
@@ -572,7 +547,6 @@
     },
     "description": "AllTrails is the go-to hiking and trail navigation app with 400,000+ trails worldwide. Offline maps, custom routes, community reviews, and Outdoor Lens AR help you explore nature safely.",
     "category": "Travel & Outdoors",
-    "platforms": ["iOS", "Android"],
     "install_label": "Install Now"
   }
 ]
