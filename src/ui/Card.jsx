@@ -2,6 +2,7 @@ import React from "react";
 import { FaStar } from "react-icons/fa";
 import { HiOutlineDownload } from "react-icons/hi";
 const Card = ({ cardData }) => {
+  console.log(cardData.id);
   return (
     <div className="card bg-base-100 p-4 shadow-none hover:shadow-2xl transition-all duration-300 scale-95 hover:scale-100">
       <figure className="mb-4">
