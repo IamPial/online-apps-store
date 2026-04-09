@@ -5,6 +5,21 @@ import AppFoundErrorPage from "../NotFoundPage/AppFoundErrorPage";
 import Card from "../../ui/Card";
 const Apps = () => {
   const data = useLoaderData();
+  const [selectId, setSelectId] = useState(data[0].id);
+
+  const obj = data.find((item) => item.id === selectId);
+  console.log("this is app", obj);
+
+  const barChartData = Object.entries(obj.ratings_breakdown).map(
+    ([key, value]) => ({
+      star: key.replace("_star", " star"),
+      count: value,
+    }),
+  );
+  console.log(barChartData);
+
+  console.log(selectId, typeof selectId);
+
   const [searchItem, setSearchItem] = useState("");
 
   const search = data.filter((searchingData) =>
@@ -57,8 +72,8 @@ const Apps = () => {
             <AppFoundErrorPage />
           ) : (
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 px-4 md:px-0">
-              {allData.map((cardData, index) => {
-                return <Card key={index} cardData={cardData}></Card>;
+              {allData.map((cardData) => {
+                return <Card key={cardData.id} cardData={cardData}></Card>;
               })}
             </div>
           )}
