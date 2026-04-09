@@ -48,6 +48,12 @@ const data = [
     pv: 680,
     amt: 1700,
   },
+  {
+    name: "Page G",
+    uv: 1400,
+    pv: 5821,
+    amt: 1700,
+  },
 ];
 
 const AppDetailsCharts = () => {
