@@ -4,11 +4,12 @@ import { FaStar } from "react-icons/fa";
 import { BiSolidLike } from "react-icons/bi";
 
 import spotify from "../assets/images/spotify.jpg";
+import AppDetailsCharts from "../components/pages/AppDetailsCharts";
 const AppDetails = () => {
   return (
     <div>
       <div className="container mx-auto">
-        <div className="py-20 flex flex-col justify-center items-center lg:justify-normal lg:items-start lg:flex-row lg:px-0 px-4 gap-10">
+        <div className="pt-20 pb-10 flex flex-col justify-center items-center lg:justify-normal lg:items-start lg:flex-row lg:px-0 px-4 gap-10">
           <img src={spotify} alt="demo" className="w-100 rounded-xl h-80" />
           <div className="flex-1">
             <div className="space-y-2">
@@ -57,7 +58,10 @@ const AppDetails = () => {
             </div>
           </div>
         </div>
+        <div className="divider h-0.5 bg-gray-300"></div>
       </div>
+
+      <AppDetailsCharts />
     </div>
   );
 };
