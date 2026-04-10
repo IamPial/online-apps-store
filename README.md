@@ -2,7 +2,7 @@
 
 <div align="center">
 
-![Hero.io](https://img.shields.io/badge/Hero.io-Apps%20Store-6C63FF?style=for-the-badge&logo=appstore&logoColor=white)
+
 
 [![Live Demo](https://img.shields.io/badge/Live%20Demo-Visit%20Site-00C7B7?style=for-the-badge&logo=netlify&logoColor=white)](https://online-apps-store.netlify.app/)
 [![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)](https://reactjs.org/)
@@ -23,17 +23,17 @@
 
 ---
 
-## ✨ Features
+## Features
 
-- 🏠 **Home Page** — Brand hero banner with Google Play & App Store buttons, stats counter (29.6M+ downloads), and a Trending Apps section
-- 🔍 **Real-time Search** — Instantly filter apps by name on the Apps page
-- 📋 **App Details** — View each app's icon, developer, download count, rating, reviews, and full description
-- 📊 **Ratings Bar Chart** — Interactive horizontal bar chart powered by Recharts showing star rating breakdown
-- 📥 **Install Apps** — One-click install with LocalStorage persistence and toast notifications
-- 🗂️ **Installation Page** — Manage installed apps with sort by name/rating and uninstall functionality
-- ⚡ **React Suspense** — Loading spinner while trending apps are being fetched
-- 📱 **Fully Responsive** — Works seamlessly on mobile, tablet, and desktop
-- 🚫 **Custom Error Pages** — Dedicated pages for app-not-found and 404 routes
+-  **Home Page** — Brand hero banner with Google Play & App Store buttons, stats counter (29.6M+ downloads), and a Trending Apps section
+-  **Real-time Search** — Instantly filter apps by name on the Apps page
+-  **App Details** — View each app's icon, developer, download count, rating, reviews, and full description
+-  **Ratings Bar Chart** — Interactive horizontal bar chart powered by Recharts showing star rating breakdown
+-  **Install Apps** — One-click install with LocalStorage persistence and toast notifications
+-  **Installation Page** — Manage installed apps with sort by name/rating and uninstall functionality
+-  **React Suspense** — Loading spinner while trending apps are being fetched
+-  **Fully Responsive** — Works seamlessly on mobile, tablet, and desktop
+-  **Custom Error Pages** — Dedicated pages for app-not-found and 404 routes
 
 ---
 
@@ -52,7 +52,7 @@
 
 ---
 
-## 📁 Project Structure
+##  Project Structure
 
 ```
 online-apps-store/
@@ -108,7 +108,7 @@ online-apps-store/
 
 ---
 
-## 🗺️ Routes
+##  Routes
 
 | Route | Component | Description |
 |-------|-----------|-------------|
@@ -120,7 +120,7 @@ online-apps-store/
 
 ---
 
-## 🚀 Getting Started
+##  Getting Started
 
 ### Prerequisites
 
@@ -131,7 +131,7 @@ online-apps-store/
 
 ```bash
 # 1. Clone the repository
-git clone https://github.com/your-username/online-apps-store.git
+git clone https://github.com/IamPial/online-apps-store.git
 
 # 2. Navigate into the project
 cd online-apps-store
@@ -153,7 +153,7 @@ npm run build
 
 ---
 
-## 🌐 Deployment (Netlify)
+##  Deployment (Netlify)
 
 This project is automatically deployed to Netlify on every push to the `main` branch. Add the following `netlify.toml` to support SPA client-side routing:
 
@@ -170,7 +170,7 @@ This project is automatically deployed to Netlify on every push to the `main` br
 
 ---
 
-## 🤝 Contributing
+##  Contributing
 
 Contributions are always welcome!
 
@@ -186,12 +186,3 @@ Contributions are always welcome!
 
 This project is licensed under the [MIT License](LICENSE).
 
----
-
-<div align="center">
-
-Made with ❤️ by **Hero.io Team**
-
-⭐ If you like this project, give it a star!
-
-</div>
