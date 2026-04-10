@@ -36,8 +36,6 @@ const AppDetails = () => {
     setBtnIsSelect(true);
   };
 
-  //TODO: work with sort by system
-
   return (
     <div>
       <div className="container mx-auto px-2 md:px-0">
