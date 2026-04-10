@@ -15,7 +15,6 @@ export const router = createBrowserRouter([
         index: true,
         Component: HomePage,
       },
-
       {
         path: "/apps",
         Component: Apps,
