@@ -4,20 +4,9 @@ import { useLoaderData } from "react-router";
 import AppFoundErrorPage from "../NotFoundPage/AppFoundErrorPage";
 import Card from "../../ui/Card";
 import AppDetails from "../details/AppDetails";
+
 const Apps = () => {
   const data = useLoaderData();
-
-  //generating bar chartData
-  const [selectId, setSelectId] = useState(null);
-
-  const obj = data.find((item) => item.id === selectId);
-
-  const barChartData = Object.entries(obj?.ratings_breakdown || {}).map(
-    ([key, value]) => ({
-      star: key.replace("_star", " star"),
-      count: value,
-    }),
-  );
 
   // for search functionality
   const [searchItem, setSearchItem] = useState("");
@@ -66,25 +55,17 @@ const Apps = () => {
             />
           </label>
         </div>
-
         <div>
           {errorMessage ? (
             <AppFoundErrorPage />
           ) : (
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 px-4 md:px-0">
               {allData.map((cardData) => {
-                return (
-                  <Card
-                    key={cardData.id}
-                    cardData={cardData}
-                    setSelectId={setSelectId}
-                  ></Card>
-                );
+                return <Card key={cardData.id} cardData={cardData}></Card>;
               })}
             </div>
           )}
         </div>
-        {obj && <AppDetails obj={obj} barChartData={barChartData} />}
       </div>
     </div>
   );
