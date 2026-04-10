@@ -2,8 +2,7 @@ import React from "react";
 import { HiOutlineDownload } from "react-icons/hi";
 import { FaStar } from "react-icons/fa";
 import { BiSolidLike } from "react-icons/bi";
-
-import AppDetailsCharts from "../../components/pages/AppDetailsCharts";
+import AppDetailsCharts from "../../components/pages/barCharts/AppDetailsCharts";
 import { Link, useLoaderData, useParams } from "react-router";
 
 const AppDetails = () => {
@@ -19,6 +18,20 @@ const AppDetails = () => {
       count: value,
     }),
   );
+
+  const handleButton = () => {
+    const newData = JSON.parse(localStorage.getItem("selectItem")) || [];
+
+    const isExistingApps = newData.find((item) => item.id === obj.id);
+    if (isExistingApps) {
+      alert("already have");
+      return;
+    }
+
+    const newValue = [...newData, obj];
+    localStorage.setItem("selectItem", JSON.stringify(newValue));
+    alert("new apps added");
+  };
 
   return (
     <div>
@@ -64,7 +77,10 @@ const AppDetails = () => {
                   </span>
                 </div>
               </div>
-              <button className="btn btn-lg bg-[#00D390] text-white">
+              <button
+                onClick={handleButton}
+                className="btn btn-lg bg-[#00D390] text-white"
+              >
                 {obj.install_label} ({obj.size_mb}) MB
               </button>
             </div>
