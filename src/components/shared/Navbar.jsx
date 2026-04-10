@@ -5,7 +5,7 @@ import { NavLink } from "react-router";
 
 const Navbar = () => {
   return (
-    <div className="bg-base-100/70 shadow-sm sticky top-0 backdrop-blur-md z-10 ">
+    <div className="bg-base-100/50 shadow-sm sticky top-0 backdrop-blur-md z-10 ">
       <nav className="navbar container mx-auto py-5 ">
         <div className="navbar-start">
           <div className="dropdown">
@@ -132,7 +132,7 @@ const Navbar = () => {
           </ul>
         </div>
         <div className="navbar-end">
-          <button className="btn text-white bg-linear-to-r from-[#632EE3] to-[#9F62F2]">
+          <button className="btn text-white shadow-none border-none bg-linear-to-r from-[#632EE3] to-[#9F62F2]">
             <FaGithub className="text-white" /> Contribute
           </button>
         </div>
