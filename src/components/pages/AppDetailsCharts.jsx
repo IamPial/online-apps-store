@@ -1,88 +1,33 @@
 import React from "react";
 import {
-  ComposedChart,
-  Line,
-  Area,
+  BarChart,
   Bar,
   XAxis,
   YAxis,
   CartesianGrid,
   Tooltip,
-  Legend,
+  ResponsiveContainer,
 } from "recharts";
 
-const data = [
-  {
-    name: "Page A",
-    uv: 590,
-    pv: 800,
-    amt: 1400,
-  },
-  {
-    name: "Page B",
-    uv: 868,
-    pv: 967,
-    amt: 1506,
-  },
-  {
-    name: "Page C",
-    uv: 1397,
-    pv: 1098,
-    amt: 989,
-  },
-  {
-    name: "Page D",
-    uv: 1480,
-    pv: 1200,
-    amt: 1228,
-  },
-  {
-    name: "Page E",
-    uv: 1520,
-    pv: 1108,
-    amt: 1100,
-  },
-  {
-    name: "Page F",
-    uv: 1400,
-    pv: 680,
-    amt: 1700,
-  },
-  {
-    name: "Page G",
-    uv: 1400,
-    pv: 5821,
-    amt: 1700,
-  },
-];
-
-const AppDetailsCharts = () => {
+const AppDetailsCharts = ({ barChartData }) => {
   return (
-    <ComposedChart
-      layout="vertical"
-      style={{
-        width: "100%",
-        maxWidth: "300px",
-        maxHeight: "70vh",
-        aspectRatio: 1 / 1.618,
-      }}
-      responsive
-      data={data}
-      margin={{
-        top: 20,
-        right: 0,
-        bottom: 0,
-        left: 0,
-      }}
-    >
-      <CartesianGrid stroke="#f5f5f5" />
-      <XAxis type="number" niceTicks="snap125" />
-      <YAxis dataKey="name" type="category" scale="band" width="auto" />
-      <Tooltip />
-      <Legend />
-
-      <Bar dataKey="pv" barSize={20} fill="#413ea0" />
-    </ComposedChart>
+    <div>
+      <h3 className="text-xl font-semibold mb-4">Ratings</h3>
+      <ResponsiveContainer width="100%" height={280}>
+        <BarChart
+          layout="vertical"
+          data={barChartData}
+          margin={{ top: 0, right: 30, bottom: 0, left: 0 }}
+        >
+          <CartesianGrid horizontal={false} />
+          <XAxis type="number" />
+          <YAxis type="category" dataKey="star" width={55} />
+          {/* <Tooltip formatter={(v) => v.toLocaleString()} /> */}
+          <Tooltip />
+          <Bar dataKey="count" fill="#f97316" />
+        </BarChart>
+      </ResponsiveContainer>
+    </div>
   );
 };
 
