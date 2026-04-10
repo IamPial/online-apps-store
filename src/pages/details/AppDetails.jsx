@@ -2,24 +2,63 @@ import React from "react";
 import { HiOutlineDownload } from "react-icons/hi";
 import { FaStar } from "react-icons/fa";
 import { BiSolidLike } from "react-icons/bi";
-
 import spotify from "../../assets/images/spotify.jpg";
 import AppDetailsCharts from "../../components/pages/AppDetailsCharts";
+import { useLoaderData, useParams } from "react-router";
+
+// {
+//     "id": 25,
+//     "name": "AllTrails",
+//     "developer": "AllTrails, LLC",
+//     "icon": "https://i.ibb.co.com/ZzYVr45z/alltrails.webp",
+//     "size_mb": 188,
+//     "rating": 4.8,
+//     "stats": {
+//       "downloads": "50M",
+//       "total_reviews": "610K"
+//     },
+//     "ratings_breakdown": {
+//       "5_star": 380000,
+//       "4_star": 155000,
+//       "3_star": 48000,
+//       "2_star": 18000,
+//       "1_star": 10000
+//     },
+//     "description": "AllTrails is the go-to hiking and trail navigation app with 400,000+ trails worldwide. Offline maps, custom routes, community reviews, and Outdoor Lens AR help you explore nature safely.",
+//     "category": "Travel & Outdoors",
+//     "install_label": "Install Now"
+//   }
+
 const AppDetails = () => {
+  const { id } = useParams();
+  const data = useLoaderData();
+
+  //generating bar chartData
+
+  const obj = data.find((item) => item.id === parseInt(id));
+
+  const barChartData = obj
+    ? Object.entries(obj.ratings_breakdown).map(([key, value]) => ({
+        star: key.replace("_star", " star"),
+        count: value,
+      }))
+    : [];
+
+  if (!obj) return null;
+
+  console.log(obj);
   return (
     <div>
       <div className="container mx-auto">
         <div className="pt-20 pb-10 flex flex-col justify-center items-center lg:justify-normal lg:items-start lg:flex-row lg:px-0 px-4 gap-10">
-          <img src={spotify} alt="demo" className="w-100 rounded-xl h-80" />
+          <img src={obj.icon} alt="demo" className="w-100 rounded-xl h-80" />
           <div className="flex-1">
             <div className="space-y-2">
-              <h2 className="text-3xl font-bold text-slate-900">
-                SmPlan:ToDo List with Reminder
-              </h2>
+              <h2 className="text-3xl font-bold text-slate-900">{obj.name}</h2>
               <p className="text-xl text-gray-600">
                 Developed by{" "}
                 <span className="font-semibold text-[#632EE3]">
-                  productive.io
+                  {obj.developer}
                 </span>{" "}
               </p>
             </div>
@@ -30,7 +69,7 @@ const AppDetails = () => {
                   <HiOutlineDownload className="text-3xl text-[#00D390] " />
                   <span className="text-[16px] text-gray-500">Downloads</span>
                   <span className="font-extrabold text-[40px] text-slate-900">
-                    8M
+                    {obj.stats.downloads}
                   </span>
                 </div>
                 <div className="flex flex-col space-y-2">
@@ -39,7 +78,7 @@ const AppDetails = () => {
                     Average Ratings
                   </span>
                   <span className="font-extrabold text-[40px] text-slate-900">
-                    4.9
+                    {obj.rating}
                   </span>
                 </div>
                 <div className="flex flex-col space-y-2">
@@ -48,36 +87,23 @@ const AppDetails = () => {
                     Total Reviews
                   </span>
                   <span className="font-extrabold text-[40px] text-slate-900">
-                    54K
+                    {obj.stats.total_reviews}
                   </span>
                 </div>
               </div>
               <button className="btn btn-lg bg-[#00D390] text-white">
-                Install Now (291 MB)
+                {obj.install_label} ({obj.size_mb}) MB
               </button>
             </div>
           </div>
         </div>
         <div className="divider h-0.5 bg-gray-300"></div>
 
-        <AppDetailsCharts />
+        <AppDetailsCharts barChartData={barChartData} />
         <div className="divider h-0.5 bg-gray-300"></div>
         <div className="pt-10 pb-20 space-y-6">
           <h2 className="text-2xl font-semibold text-slate-950">Description</h2>
-          <p className="text-lg text-gray-600 leading-8 ">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga vitae
-            ratione minima harum eius, aliquam et suscipit rem velit provident
-            esse accusamus eligendi illum cum, illo reprehenderit itaque culpa
-            incidunt consequatur laborum tenetur saepe? Non, amet quae
-            laboriosam nisi, a ea dignissimos consectetur rerum quisquam nulla
-            tenetur. Inventore consequuntur, ipsa distinctio pariatur fuga autem
-            esse doloremque eligendi consectetur cupiditate vero totam cumque
-            ratione cum eos rem odit earum tempora commodi, dolor iste
-            reiciendis sapiente. Nam rem, animi necessitatibus tempore velit
-            voluptatum molestias, quasi repellat rerum quas laborum cum! Magnam
-            nostrum itaque dolorum est cumque distinctio. Asperiores ad nisi
-            molestiae unde.
-          </p>
+          <p className="text-lg text-gray-600 leading-8 ">{obj.description}</p>
         </div>
       </div>
     </div>
