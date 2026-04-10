@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { TiArrowSortedDown } from "react-icons/ti";
 import { RiDownload2Line } from "react-icons/ri";
 import { FaStar } from "react-icons/fa6";
@@ -8,6 +8,14 @@ const Installation = () => {
   const [apps, setApps] = useState(
     JSON.parse(localStorage.getItem("selectItem")) || [],
   );
+
+  const handleSortedData = (type) => {
+    const sorted = [...apps].sort((a, b) => {
+      if (type === "name") return a.name.localeCompare(b.name);
+      if (type === "rating") return a.rating - b.rating;
+    });
+    setApps(sorted);
+  };
 
   const handleDelete = (obj) => {
     const deleteApps = apps.filter((item) => item.id !== obj.id);
@@ -34,10 +42,10 @@ const Installation = () => {
             tabIndex="-1"
             className="dropdown-content menu bg-base-100 rounded-box z-1 w-36 p-2 shadow-sm"
           >
-            <li>
+            <li onClick={() => handleSortedData("name")}>
               <a>Name</a>
             </li>
-            <li>
+            <li onClick={() => handleSortedData("rating")}>
               <a>Rating</a>
             </li>
           </ul>
