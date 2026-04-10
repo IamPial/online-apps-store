@@ -19,7 +19,7 @@ const AppDetails = () => {
     }),
   );
 
-  const handleButton = () => {
+  const handleInstallButton = () => {
     const newData = JSON.parse(localStorage.getItem("selectItem")) || [];
 
     const isExistingApps = newData.find((item) => item.id === obj.id);
@@ -78,7 +78,7 @@ const AppDetails = () => {
                 </div>
               </div>
               <button
-                onClick={handleButton}
+                onClick={handleInstallButton}
                 className="btn btn-lg bg-[#00D390] text-white"
               >
                 {obj.install_label} ({obj.size_mb}) MB
