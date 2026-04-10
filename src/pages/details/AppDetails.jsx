@@ -4,6 +4,7 @@ import { FaStar } from "react-icons/fa";
 import { BiSolidLike } from "react-icons/bi";
 import AppDetailsCharts from "../../components/pages/barCharts/AppDetailsCharts";
 import { Link, useLoaderData, useParams } from "react-router";
+import { toast } from "react-toastify";
 
 const AppDetails = () => {
   const { id } = useParams();
@@ -25,17 +26,15 @@ const AppDetails = () => {
 
     const isExistingApps = newData.find((item) => item.id === obj.id);
     if (isExistingApps) {
-      alert("already have");
+      toast.error(`${obj.name} Already Installed`);
       return;
     }
 
     const newValue = [...newData, obj];
     localStorage.setItem("selectItem", JSON.stringify(newValue));
-    alert("new apps added");
+    toast.success(`${obj.name} Installed Successfully`);
     setBtnIsSelect(true);
   };
-
-  // TODO: work with enable and disabled button
 
   //TODO: work with sort by system
 
