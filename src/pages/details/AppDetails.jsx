@@ -2,39 +2,15 @@ import React from "react";
 import { HiOutlineDownload } from "react-icons/hi";
 import { FaStar } from "react-icons/fa";
 import { BiSolidLike } from "react-icons/bi";
-import spotify from "../../assets/images/spotify.jpg";
-import AppDetailsCharts from "../../components/pages/AppDetailsCharts";
-import { useLoaderData, useParams } from "react-router";
 
-// {
-//     "id": 25,
-//     "name": "AllTrails",
-//     "developer": "AllTrails, LLC",
-//     "icon": "https://i.ibb.co.com/ZzYVr45z/alltrails.webp",
-//     "size_mb": 188,
-//     "rating": 4.8,
-//     "stats": {
-//       "downloads": "50M",
-//       "total_reviews": "610K"
-//     },
-//     "ratings_breakdown": {
-//       "5_star": 380000,
-//       "4_star": 155000,
-//       "3_star": 48000,
-//       "2_star": 18000,
-//       "1_star": 10000
-//     },
-//     "description": "AllTrails is the go-to hiking and trail navigation app with 400,000+ trails worldwide. Offline maps, custom routes, community reviews, and Outdoor Lens AR help you explore nature safely.",
-//     "category": "Travel & Outdoors",
-//     "install_label": "Install Now"
-//   }
+import AppDetailsCharts from "../../components/pages/AppDetailsCharts";
+import { Link, useLoaderData, useParams } from "react-router";
 
 const AppDetails = () => {
   const { id } = useParams();
   const data = useLoaderData();
 
   //generating bar chartData
-
   const obj = data.find((item) => item.id === parseInt(id));
 
   const barChartData = obj
@@ -49,7 +25,7 @@ const AppDetails = () => {
   console.log(obj);
   return (
     <div>
-      <div className="container mx-auto">
+      <div className="container mx-auto px-2 md:px-0">
         <div className="pt-20 pb-10 flex flex-col justify-center items-center lg:justify-normal lg:items-start lg:flex-row lg:px-0 px-4 gap-10">
           <img src={obj.icon} alt="demo" className="w-100 rounded-xl h-80" />
           <div className="flex-1">
@@ -104,6 +80,15 @@ const AppDetails = () => {
         <div className="pt-10 pb-20 space-y-6">
           <h2 className="text-2xl font-semibold text-slate-950">Description</h2>
           <p className="text-lg text-gray-600 leading-8 ">{obj.description}</p>
+        </div>
+
+        <div className="flex justify-center items-center py-2">
+          <Link
+            to="/apps"
+            className="btn btn-lg btn-primary mx-auto text-center"
+          >
+            Go Back
+          </Link>
         </div>
       </div>
     </div>
