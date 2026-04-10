@@ -11,7 +11,7 @@ import {
 
 const AppDetailsCharts = ({ barChartData }) => {
   return (
-    <div>
+    <div className="py-5">
       <h3 className="text-xl font-semibold mb-4">Ratings</h3>
       <ResponsiveContainer width="100%" height={280}>
         <BarChart
