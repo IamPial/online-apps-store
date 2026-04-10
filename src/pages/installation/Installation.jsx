@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import { TiArrowSortedDown } from "react-icons/ti";
 import { RiDownload2Line } from "react-icons/ri";
 import { FaStar } from "react-icons/fa6";
