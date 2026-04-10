@@ -2,14 +2,14 @@
 
 <div align="center">
 
-
+**Hero.io** is a modern online app store where users can browse, search, install, and uninstall apps with ease.
 
 [![Live Demo](https://img.shields.io/badge/Live%20Demo-Visit%20Site-00C7B7?style=for-the-badge&logo=netlify&logoColor=white)](https://online-apps-store.netlify.app/)
 [![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)](https://reactjs.org/)
 [![TailwindCSS](https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white)](https://tailwindcss.com/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg?style=for-the-badge)](https://opensource.org/licenses/MIT)
 
-**Hero.io** is a modern online app store where users can browse, search, install, and uninstall apps with ease.
+
 
 🔗 **Live URL:** [https://online-apps-store.netlify.app/](https://online-apps-store.netlify.app/)
 
@@ -19,7 +19,7 @@
 
 ## 📸 Screenshots
 
-> _(Add your project screenshots here)_
+![Hero-IO Banner](./src/assets/images/hero-io.png)
 
 ---
 
