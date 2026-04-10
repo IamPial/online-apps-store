@@ -29,10 +29,7 @@ export const router = createBrowserRouter([
         path: "/install",
         Component: Installation,
       },
-      {
-        path: "*",
-        Component: NotFoundPage,
-      },
     ],
+    errorElement: <NotFoundPage />,
   },
 ]);
