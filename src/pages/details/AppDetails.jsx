@@ -13,16 +13,13 @@ const AppDetails = () => {
   //generating bar chartData
   const obj = data.find((item) => item.id === parseInt(id));
 
-  const barChartData = obj
-    ? Object.entries(obj.ratings_breakdown).map(([key, value]) => ({
-        star: key.replace("_star", " star"),
-        count: value,
-      }))
-    : [];
+  const barChartData = Object.entries(obj.ratings_breakdown).map(
+    ([key, value]) => ({
+      star: key.replace("_star", " star"),
+      count: value,
+    }),
+  );
 
-  if (!obj) return null;
-
-  console.log(obj);
   return (
     <div>
       <div className="container mx-auto px-2 md:px-0">
