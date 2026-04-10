@@ -3,7 +3,6 @@ import { useLoaderData } from "react-router";
 
 import AppFoundErrorPage from "../NotFoundPage/AppFoundErrorPage";
 import Card from "../../ui/Card";
-import AppDetails from "../details/AppDetails";
 
 const Apps = () => {
   const data = useLoaderData();
