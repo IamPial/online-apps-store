@@ -2,11 +2,10 @@ import React from "react";
 import { FaStar } from "react-icons/fa";
 import { HiOutlineDownload } from "react-icons/hi";
 import { Link } from "react-router";
-const Card = ({ cardData, setSelectId }) => {
+const Card = ({ cardData }) => {
   return (
     <Link
       to={`/apps/${cardData.id}`}
-      onClick={() => setSelectId(cardData.id)}
       className="card bg-base-100 p-4 shadow-none hover:shadow-2xl transition-all duration-300 scale-95 hover:scale-100"
     >
       <figure className="mb-4">
