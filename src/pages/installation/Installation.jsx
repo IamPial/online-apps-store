@@ -2,17 +2,18 @@ import React, { useState } from "react";
 import { TiArrowSortedDown } from "react-icons/ti";
 import { RiDownload2Line } from "react-icons/ri";
 import { FaStar } from "react-icons/fa6";
+import { toast } from "react-toastify";
 
 const Installation = () => {
   const [apps, setApps] = useState(
     JSON.parse(localStorage.getItem("selectItem")) || [],
   );
 
-  const handleDelete = (id) => {
-    const deleteApps = apps.filter((item) => item.id !== id);
-    console.log(deleteApps);
+  const handleDelete = (obj) => {
+    const deleteApps = apps.filter((item) => item.id !== obj.id);
     setApps(deleteApps);
     localStorage.setItem("selectItem", JSON.stringify(deleteApps));
+    toast.success(`${obj.name} remove`);
   };
 
   return (
@@ -24,7 +25,7 @@ const Installation = () => {
         </p>
       </div>
       <div className="flex flex-col-reverse md:flex-row gap-5 md:gap-0 justify-between items-center py-10">
-        <h2 className="text-2xl font-semibold">1 Apps Found</h2>
+        <h2 className="text-2xl font-semibold">{apps.length} Apps Found</h2>
         <div className="dropdown dropdown-center">
           <div tabIndex={0} role="button" className="btn m-1">
             Sort By Size <TiArrowSortedDown />
@@ -74,7 +75,7 @@ const Installation = () => {
               </div>
             </div>
             <button
-              onClick={() => handleDelete(app.id)}
+              onClick={() => handleDelete(app)}
               className="btn btn-lg bg-[#00D390] text-white  rounded-lg"
             >
               Uninstall
