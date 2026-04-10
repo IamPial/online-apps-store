@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { HiOutlineDownload } from "react-icons/hi";
 import { FaStar } from "react-icons/fa";
 import { BiSolidLike } from "react-icons/bi";
@@ -8,6 +8,7 @@ import { Link, useLoaderData, useParams } from "react-router";
 const AppDetails = () => {
   const { id } = useParams();
   const data = useLoaderData();
+  const [btnIsSelect, setBtnIsSelect] = useState(false);
 
   //generating bar chartData
   const obj = data.find((item) => item.id === parseInt(id));
@@ -31,7 +32,12 @@ const AppDetails = () => {
     const newValue = [...newData, obj];
     localStorage.setItem("selectItem", JSON.stringify(newValue));
     alert("new apps added");
+    setBtnIsSelect(true);
   };
+
+  // TODO: work with enable and disabled button
+
+  //TODO: work with sort by system
 
   return (
     <div>
@@ -79,9 +85,12 @@ const AppDetails = () => {
               </div>
               <button
                 onClick={handleInstallButton}
-                className="btn btn-lg bg-[#00D390] text-white"
+                className={`btn btn-lg ${btnIsSelect === true ? "bg-gray-300 " : "bg-[#00D390]"} text-white`}
+                disabled={btnIsSelect}
               >
-                {obj.install_label} ({obj.size_mb}) MB
+                {btnIsSelect
+                  ? "Installed"
+                  : `${obj.install_label} (${obj.size_mb}) MB`}
               </button>
             </div>
           </div>
