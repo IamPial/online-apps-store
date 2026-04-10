@@ -13,7 +13,7 @@ const Installation = () => {
     const deleteApps = apps.filter((item) => item.id !== obj.id);
     setApps(deleteApps);
     localStorage.setItem("selectItem", JSON.stringify(deleteApps));
-    toast.success(`${obj.name} remove`);
+    toast.success(`${obj.name} Uninstalled Successfully`);
   };
 
   return (
