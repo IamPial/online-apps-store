@@ -3,7 +3,8 @@ import React from "react";
 import playStore from "../../assets/images/play.png";
 import appStore from "../../assets/images/app.png";
 import bannerImg from "../../assets/images/hero.png";
-import Counter from "./Counter";
+import Counter from "../../components/pages/counterPage/Counter";
+import TrendingPage from "../../components/pages/trendingPage/trendingPage";
 
 const HomePage = () => {
   return (
@@ -35,6 +36,7 @@ const HomePage = () => {
         </div>
       </div>
       <Counter />
+      <TrendingPage></TrendingPage>
     </div>
   );
 };
