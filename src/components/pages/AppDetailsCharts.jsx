@@ -22,7 +22,6 @@ const AppDetailsCharts = ({ barChartData }) => {
           <CartesianGrid horizontal={false} />
           <XAxis type="number" />
           <YAxis type="category" dataKey="star" width={55} />
-          {/* <Tooltip formatter={(v) => v.toLocaleString()} /> */}
           <Tooltip />
           <Bar dataKey="count" fill="#f97316" />
         </BarChart>
