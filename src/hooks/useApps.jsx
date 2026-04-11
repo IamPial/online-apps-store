@@ -1,0 +1,20 @@
+import React, { useEffect, useState } from "react";
+
+const useApps = () => {
+  const [apps, setApps] = useState([]);
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    const fetchData = async () => {
+      const res = await fetch("/apps.json");
+      const data = await res.json();
+      setApps(data);
+      setLoading(false);
+    };
+    fetchData();
+  }, []);
+
+  return { apps, loading };
+};
+
+export default useApps;
