@@ -1,8 +1,8 @@
 import React, { Suspense } from "react";
 
-import Counter from "../../components/pages/counterPage/Counter";
 import TrendingPage from "../../components/pages/trendingPage/trendingPage";
 import Banner from "../../components/homepage/Banner";
+import StatsSection from "../../components/homepage/StatsSection";
 
 const fetchData = fetch("/home.json").then((res) => res.json());
 
@@ -10,7 +10,7 @@ const HomePage = () => {
   return (
     <div>
       <Banner />
-      <Counter />
+      <StatsSection />
       <Suspense
         fallback={
           <div className="py-20 flex justify-center items-center">
