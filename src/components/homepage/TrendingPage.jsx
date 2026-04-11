@@ -1,16 +1,18 @@
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router";
-
 import Card from "./../../ui/Card";
+import { RingLoader } from "react-spinners";
 
 const TrendingPage = () => {
   const [apps, setApps] = useState([]);
+  const [loading, setLoading] = useState(true);
 
   useEffect(() => {
     const fetchData = async () => {
-      const res = await fetch("/home.json");
+      const res = await fetch("/apps.json");
       const data = await res.json();
       setApps(data);
+      setLoading(false);
     };
     fetchData();
   }, []);
@@ -23,11 +25,19 @@ const TrendingPage = () => {
           Explore All Trending Apps on the Market developed by us
         </p>
       </div>
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 px-4 md:px-0">
-        {apps.map((homeCard, index) => {
-          return <Card cardData={homeCard} key={index} />;
-        })}
-      </div>
+
+      {loading ? (
+        <div className="py-20 flex justify-center items-center">
+          <RingLoader color="#000" />
+        </div>
+      ) : (
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 px-4 md:px-0">
+          {apps.slice(0, 8).map((homeCard, index) => {
+            return <Card cardData={homeCard} key={index} />;
+          })}
+        </div>
+      )}
+
       <div className="flex justify-center items-center pt-20">
         <Link to="/apps" className="btn btn-lg btn-primary mx-auto text-center">
           Show More
