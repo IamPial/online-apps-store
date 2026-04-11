@@ -1,19 +1,19 @@
 import React, { useState } from "react";
-import { useLoaderData } from "react-router";
-
 import AppFoundErrorPage from "../NotFoundPage/AppFoundErrorPage";
 import Card from "../../ui/Card";
+import useApps from "../../hooks/useApps";
+import { RingLoader } from "react-spinners";
 
 const Apps = () => {
-  const data = useLoaderData();
+  const { apps, loading } = useApps();
 
   // for search functionality
   const [searchItem, setSearchItem] = useState("");
 
-  const search = data.filter((searchingData) =>
+  const search = apps.filter((searchingData) =>
     searchingData.name.toLowerCase().includes(searchItem.toLowerCase()),
   );
-  const allData = search.length > 0 ? search : data;
+  const allData = search.length > 0 ? search : apps;
   const errorMessage = searchItem.length > 0 && search.length === 0;
   const dataLength = 0;
 
@@ -57,10 +57,14 @@ const Apps = () => {
         <div>
           {errorMessage ? (
             <AppFoundErrorPage />
+          ) : loading ? (
+            <div className="py-20 flex justify-center items-center">
+              <RingLoader color="#000" />
+            </div>
           ) : (
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 px-4 md:px-0">
               {allData.map((cardData) => {
-                return <Card key={cardData.id} cardData={cardData}></Card>;
+                return <Card key={cardData.id} cardData={cardData} />;
               })}
             </div>
           )}
