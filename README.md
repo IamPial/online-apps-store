@@ -11,7 +11,6 @@
 
 
 
-🔗 **Live URL:** [https://online-apps-store.netlify.app/](https://online-apps-store.netlify.app/)
 
 </div>
 
