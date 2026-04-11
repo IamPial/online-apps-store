@@ -1,4 +1,4 @@
-import React, { useContext, useState } from "react";
+import React, { useContext } from "react";
 import { TiArrowSortedDown } from "react-icons/ti";
 import { RiDownload2Line } from "react-icons/ri";
 import { FaStar } from "react-icons/fa6";
@@ -6,26 +6,20 @@ import { toast } from "react-toastify";
 import { CreateAppContext } from "../../context/AppContext";
 
 const Installation = () => {
-  const k = useContext(CreateAppContext);
-  console.log(k);
-
-  const [apps, setApps] = useState(
-    JSON.parse(localStorage.getItem("selectItem")) || [],
-  );
+  const { installedApps, setInstalledApps } = useContext(CreateAppContext);
 
   const handleSortedData = (type) => {
-    const sorted = [...apps].sort((a, b) => {
+    const sorted = [...installedApps].sort((a, b) => {
       if (type === "name") return a.name.localeCompare(b.name);
       if (type === "rating") return a.rating - b.rating;
     });
-    setApps(sorted);
+    setInstalledApps(sorted);
   };
 
   const handleDelete = (obj) => {
-    const deleteApps = apps.filter((item) => item.id !== obj.id);
-    setApps(deleteApps);
-    localStorage.setItem("selectItem", JSON.stringify(deleteApps));
-    toast.success(`${obj.name} Uninstalled Successfully`);
+    const deleteApps = installedApps.filter((item) => item.id !== obj.id);
+    setInstalledApps(deleteApps);
+    toast.warning(`${obj.name} Uninstalled Successfully`);
   };
 
   return (
@@ -37,7 +31,9 @@ const Installation = () => {
         </p>
       </div>
       <div className="flex flex-col-reverse md:flex-row gap-5 md:gap-0 justify-between items-center py-10">
-        <h2 className="text-2xl font-semibold">{apps.length} Apps Found</h2>
+        <h2 className="text-2xl font-semibold">
+          {installedApps.length} Apps Found
+        </h2>
         <div className="dropdown dropdown-center">
           <div tabIndex={0} role="button" className="btn m-1">
             Sort By Size <TiArrowSortedDown />
@@ -57,43 +53,50 @@ const Installation = () => {
       </div>
 
       <div className="space-y-4">
-        {apps.map((app) => (
-          <div
-            key={app.id}
-            className="flex justify-between items-center  rounded-lg p-2 shadow-sm "
-          >
-            <div className="flex gap-4 items-center ">
-              <div className="w-25">
-                <img
-                  src={app.icon}
-                  alt={app.name}
-                  className="rounded-lg  h-20 "
-                />
-              </div>
-              <div className="flex gap-4 flex-col">
-                <h2 className="font-medium text-xl text-slate-900">
-                  {app.name}
-                </h2>
-                <div className="flex gap-4 ">
-                  <span className=" flex gap-1 items-center text-[#00D390]">
-                    <RiDownload2Line className="text-[#00D390]" />{" "}
-                    {app.downloads}
-                  </span>
-                  <span className=" flex gap-1 items-center text-[#FF8811]">
-                    <FaStar className="text-[#FF8811]" /> {app.rating}
-                  </span>
-                  <span className="text-gray-600">{app.size_mb}MB</span>
+        {installedApps.length === 0 ? (
+          <h2 className="text-center text-4xl md:text-5xl font-bold text-rose-400">
+            {" "}
+            No Install Apps Found!
+          </h2>
+        ) : (
+          installedApps.map((app) => (
+            <div
+              key={app.id}
+              className="flex justify-between items-center  rounded-lg p-2 shadow-sm "
+            >
+              <div className="flex gap-4 items-center ">
+                <div className="w-25">
+                  <img
+                    src={app.icon}
+                    alt={app.name}
+                    className="rounded-lg  h-20 "
+                  />
+                </div>
+                <div className="flex gap-4 flex-col">
+                  <h2 className="font-medium text-xl text-slate-900">
+                    {app.name}
+                  </h2>
+                  <div className="flex gap-4 ">
+                    <span className=" flex gap-1 items-center text-[#00D390]">
+                      <RiDownload2Line className="text-[#00D390]" />{" "}
+                      {app.downloads}
+                    </span>
+                    <span className=" flex gap-1 items-center text-[#FF8811]">
+                      <FaStar className="text-[#FF8811]" /> {app.rating}
+                    </span>
+                    <span className="text-gray-600">{app.size_mb}MB</span>
+                  </div>
                 </div>
               </div>
+              <button
+                onClick={() => handleDelete(app)}
+                className="btn btn-lg bg-[#00D390] text-white  rounded-lg"
+              >
+                Uninstall
+              </button>
             </div>
-            <button
-              onClick={() => handleDelete(app)}
-              className="btn btn-lg bg-[#00D390] text-white  rounded-lg"
-            >
-              Uninstall
-            </button>
-          </div>
-        ))}
+          ))
+        )}
       </div>
     </div>
   );
