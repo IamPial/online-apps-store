@@ -9,15 +9,7 @@ const HomePage = () => {
     <div>
       <Banner />
       <StatsSection />
-      {/* <Suspense
-        fallback={
-          <div className="py-20 flex justify-center items-center">
-            <span className="loading loading-bars loading-xl"></span>
-          </div>
-        }
-      >
-      </Suspense> */}
-      <TrendingPage></TrendingPage>
+      <TrendingPage />
     </div>
   );
 };
