@@ -1,13 +1,12 @@
-import React, { createContext } from "react";
-import useApps from "../hooks/useApps";
+import React, { createContext, useState } from "react";
 
 export const CreateAppContext = createContext();
 
 const AppContext = ({ children }) => {
-  const { apps, loading } = useApps();
+  const [installedApps, setInstalledApps] = useState([]);
   const data = {
-    apps,
-    loading,
+    installedApps,
+    setInstalledApps,
   };
   return (
     <div>
