@@ -1,10 +1,14 @@
-import React, { useState } from "react";
+import React, { useContext, useState } from "react";
 import { TiArrowSortedDown } from "react-icons/ti";
 import { RiDownload2Line } from "react-icons/ri";
 import { FaStar } from "react-icons/fa6";
 import { toast } from "react-toastify";
+import { CreateAppContext } from "../../context/AppContext";
 
 const Installation = () => {
+  const k = useContext(CreateAppContext);
+  console.log(k);
+
   const [apps, setApps] = useState(
     JSON.parse(localStorage.getItem("selectItem")) || [],
   );
