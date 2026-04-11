@@ -1,7 +1,7 @@
 import React from "react";
 import { FaGithub } from "react-icons/fa";
 import logoImg from "../../assets/images/logo.png";
-import { NavLink } from "react-router";
+import MyNavLink from "./MyNavLink";
 
 const Navbar = () => {
   return (
@@ -32,49 +32,16 @@ const Navbar = () => {
             </div>
             <ul
               tabIndex="-1"
-              className="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow"
+              className="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-6 space-y-2  shadow"
             >
               <li>
-                <NavLink
-                  to="/"
-                  className={({ isActive }) =>
-                    `font-medium text-[16px]  ${
-                      isActive
-                        ? "bg-linear-to-r from-[#632EE3] to-[#9F62F2] bg-clip-text text-transparent  rounded-none "
-                        : "text-slate-950"
-                    }`
-                  }
-                >
-                  Home
-                </NavLink>
+                <MyNavLink to="/">Home</MyNavLink>
               </li>
               <li>
-                <NavLink
-                  to="/apps"
-                  className={({ isActive }) =>
-                    `font-medium text-[16px]  ${
-                      isActive
-                        ? "bg-linear-to-r from-[#632EE3] to-[#9F62F2] bg-clip-text text-transparent  rounded-none "
-                        : "text-slate-950"
-                    }`
-                  }
-                >
-                  Apps
-                </NavLink>
+                <MyNavLink to="/apps">Apps</MyNavLink>
               </li>
               <li>
-                <NavLink
-                  to="/install"
-                  className={({ isActive }) =>
-                    `font-medium text-[16px]  ${
-                      isActive
-                        ? "bg-linear-to-r from-[#632EE3] to-[#9F62F2] bg-clip-text text-transparent  rounded-none "
-                        : "text-slate-950"
-                    }`
-                  }
-                >
-                  Installation
-                </NavLink>
+                <MyNavLink to="/install">Installation</MyNavLink>
               </li>
             </ul>
           </div>
@@ -88,46 +55,13 @@ const Navbar = () => {
         <div className="navbar-center hidden lg:flex">
           <ul className="menu menu-horizontal px-1 space-x-8">
             <li>
-              <NavLink
-                to="/"
-                className={({ isActive }) =>
-                  `font-medium text-[16px] p-0  ${
-                    isActive
-                      ? "bg-linear-to-r from-[#632EE3] to-[#9F62F2] bg-clip-text text-transparent border-b-2 border-b-purple-500 rounded-none "
-                      : "text-slate-950"
-                  }`
-                }
-              >
-                Home
-              </NavLink>
+              <MyNavLink to="/">Home</MyNavLink>
             </li>
             <li>
-              <NavLink
-                to="/apps"
-                className={({ isActive }) =>
-                  `font-medium text-[16px] p-0  ${
-                    isActive
-                      ? "bg-linear-to-r from-[#632EE3] to-[#9F62F2] bg-clip-text text-transparent border-b-2 border-b-purple-500 rounded-none "
-                      : "text-slate-950"
-                  }`
-                }
-              >
-                Apps
-              </NavLink>
+              <MyNavLink to="/apps">Apps</MyNavLink>
             </li>
             <li>
-              <NavLink
-                to="/install"
-                className={({ isActive }) =>
-                  `font-medium text-[16px] p-0  ${
-                    isActive
-                      ? "bg-linear-to-r from-[#632EE3] to-[#9F62F2] bg-clip-text text-transparent border-b-2 border-b-purple-500 rounded-none "
-                      : "text-slate-950"
-                  }`
-                }
-              >
-                Installation
-              </NavLink>
+              <MyNavLink to="/install">Installation</MyNavLink>
             </li>
           </ul>
         </div>
