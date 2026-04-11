@@ -2,7 +2,7 @@ import React, { useContext, useState } from "react";
 import { HiOutlineDownload } from "react-icons/hi";
 import { FaStar } from "react-icons/fa";
 import { BiSolidLike } from "react-icons/bi";
-import AppDetailsCharts from "../../components/pages/barCharts/AppDetailsCharts";
+import Charts from "../../components/shared/Charts";
 import { Link, useParams } from "react-router";
 import { toast } from "react-toastify";
 import useApps from "../../hooks/useApps";
@@ -45,8 +45,6 @@ const AppDetails = () => {
     toast.success(`${expectedApp.name} Installed Successfully`);
     setBtnIsSelect(true);
   };
-
-  console.log("installed apps", installedApps);
 
   return (
     <div>
@@ -112,7 +110,7 @@ const AppDetails = () => {
         </div>
         <div className="divider h-0.5 bg-gray-300"></div>
 
-        <AppDetailsCharts barChartData={barChartData} />
+        <Charts barChartData={barChartData} />
         <div className="divider h-0.5 bg-gray-300"></div>
         <div className="pt-10 pb-20 space-y-6">
           <h2 className="text-2xl font-semibold text-slate-950">Description</h2>
