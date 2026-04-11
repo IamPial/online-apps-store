@@ -4,6 +4,21 @@ import logoImg from "../../assets/images/logo.png";
 import MyNavLink from "./MyNavLink";
 
 const Navbar = () => {
+  const navItems = [
+    {
+      path: "/",
+      text: "Home",
+    },
+    {
+      path: "/apps",
+      text: "Apps",
+    },
+    {
+      path: "/install",
+      text: "Installation",
+    },
+  ];
+
   return (
     <div className="bg-base-100/50 shadow-sm sticky top-0 backdrop-blur-md z-10 ">
       <nav className="navbar container mx-auto py-5 ">
@@ -34,21 +49,11 @@ const Navbar = () => {
               tabIndex="-1"
               className="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52  shadow"
             >
-              <li>
-                <MyNavLink to="/" className={"border-none "}>
-                  Home
+              {navItems.map((item, index) => (
+                <MyNavLink key={index} to={item.path} className={"border-none"}>
+                  {item.text}
                 </MyNavLink>
-              </li>
-              <li>
-                <MyNavLink to="/apps" className={"border-none "}>
-                  Apps
-                </MyNavLink>
-              </li>
-              <li>
-                <MyNavLink to="/install" className={"border-none "}>
-                  Installation
-                </MyNavLink>
-              </li>
+              ))}
             </ul>
           </div>
           <div className="flex items-center gap-2">
