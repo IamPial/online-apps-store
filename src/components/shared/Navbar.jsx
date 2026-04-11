@@ -65,15 +65,11 @@ const Navbar = () => {
         </div>
         <div className="navbar-center hidden lg:flex">
           <ul className="menu menu-horizontal px-1 space-x-8">
-            <li>
-              <MyNavLink to="/">Home</MyNavLink>
-            </li>
-            <li>
-              <MyNavLink to="/apps">Apps</MyNavLink>
-            </li>
-            <li>
-              <MyNavLink to="/install">Installation</MyNavLink>
-            </li>
+            {navItems.map((item, index) => (
+              <MyNavLink key={index} to={item.path}>
+                {item.text}
+              </MyNavLink>
+            ))}
           </ul>
         </div>
         <div className="navbar-end">
