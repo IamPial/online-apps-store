@@ -18,7 +18,6 @@
       "1_star": 12000
     },
     "description": "Jira is the #1 project management tool for agile teams. Plan sprints, track bugs, manage backlogs, and ship great software faster. Integrates seamlessly with GitHub, Confluence, Slack, and 3,000+ apps.",
-    "category": "Productivity",
     "install_label": "Install Now"
   },
   {
@@ -40,7 +39,6 @@
       "1_star": 60000
     },
     "description": "ChatGPT is an AI-powered assistant that helps you write, research, brainstorm, translate, and code. Powered by GPT-4o, it adapts to your needs with real-time web search, image generation, and voice conversation features.",
-    "category": "AI & Productivity",
     "install_label": "Install Now"
   },
   {
@@ -62,7 +60,6 @@
       "1_star": 22000
     },
     "description": "Canva is the world's most popular design platform. Create stunning social media posts, presentations, posters, logos, and videos using thousands of templates. AI-powered tools make professional design easy for everyone.",
-    "category": "Design & Creativity",
     "install_label": "Install Now"
   },
   {
@@ -84,7 +81,6 @@
       "1_star": 75000
     },
     "description": "Duolingo is the world's most popular way to learn a language. Practice Spanish, French, German, Japanese, and 40+ more languages with fun, bite-sized lessons powered by AI tutors and gamified streaks.",
-    "category": "Education",
     "install_label": "Install Now"
   },
   {
@@ -106,7 +102,6 @@
       "1_star": 180000
     },
     "description": "Spotify is the leading audio streaming platform with over 100 million songs and 5 million podcasts. Discover new music with personalized playlists like Discover Weekly and Daily Mix. Enjoy offline listening with Premium.",
-    "category": "Music & Audio",
     "install_label": "Install Now"
   },
   {
@@ -128,7 +123,6 @@
       "1_star": 95000
     },
     "description": "TikTok is the world's leading short-form video platform. Create, share, and discover entertaining videos with powerful editing tools, filters, and an AI-powered For You feed.",
-    "category": "Social Media",
     "install_label": "Install Now"
   },
   {
@@ -150,7 +144,6 @@
       "1_star": 190000
     },
     "description": "Instagram is a visual-first social media platform for sharing photos, reels, and stories. Connect with creators, discover brands, and grow your audience with powerful tools for content creation and marketing.",
-    "category": "Social Media",
     "install_label": "Install Now"
   },
   {
@@ -172,7 +165,6 @@
       "1_star": 210000
     },
     "description": "WhatsApp is the world's most popular messaging app. Send texts, voice messages, make HD video calls, share media, and stay connected with end-to-end encryption for privacy.",
-    "category": "Messaging",
     "install_label": "Install Now"
   },
   {
@@ -194,7 +186,6 @@
       "1_star": 32000
     },
     "description": "Google Gemini is an advanced AI assistant integrated across Android and Google Workspace. Generate content, summarize documents, analyze images, and automate tasks with multimodal AI capabilities.",
-    "category": "AI & Productivity",
     "install_label": "Install Now"
   },
   {
@@ -216,7 +207,6 @@
       "1_star": 310000
     },
     "description": "YouTube is the world's largest video platform. Watch, upload, and share videos across every topic. Enjoy YouTube Premium for ad-free viewing, background play, and exclusive original content.",
-    "category": "Entertainment",
     "install_label": "Install Now"
   },
   {
@@ -238,7 +228,6 @@
       "1_star": 380000
     },
     "description": "Facebook connects billions of people worldwide. Share updates, join groups, watch reels, follow pages, and discover events in your community. AI-powered feed keeps you updated on what matters most.",
-    "category": "Social Media",
     "install_label": "Install Now"
   },
   {
@@ -260,7 +249,6 @@
       "1_star": 98000
     },
     "description": "Telegram is a cloud-based messaging app with a strong focus on speed and privacy. Supports large group chats, channels, bots, file sharing up to 4GB, and end-to-end encrypted secret chats.",
-    "category": "Messaging",
     "install_label": "Install Now"
   },
   {
@@ -282,7 +270,6 @@
       "1_star": 260000
     },
     "description": "Netflix is the world's leading streaming service with thousands of movies, TV shows, documentaries, and Netflix Originals. Stream in 4K on any device with offline download support.",
-    "category": "Entertainment",
     "install_label": "Install Now"
   },
   {
@@ -304,7 +291,6 @@
       "1_star": 42000
     },
     "description": "Threads is Meta's text-based social media platform for real-time conversations. Share short posts, follow trending topics, and engage with a global community closely integrated with Instagram.",
-    "category": "Social Media",
     "install_label": "Install Now"
   },
   {
@@ -326,7 +312,6 @@
       "1_star": 140000
     },
     "description": "Amazon Shopping lets you browse millions of products, track orders, and enjoy fast delivery with Prime. AR View lets you visualize products in your space before buying.",
-    "category": "E-Commerce",
     "install_label": "Install Now"
   },
   {
@@ -348,7 +333,6 @@
       "1_star": 85000
     },
     "description": "Temu is a fast-growing global shopping app offering a massive range of products at competitive prices. Daily deals, flash sales, and free shipping make it one of the most downloaded shopping apps worldwide.",
-    "category": "E-Commerce",
     "install_label": "Install Now"
   },
   {
@@ -370,7 +354,6 @@
       "1_star": 18000
     },
     "description": "Notion is an all-in-one workspace for notes, wikis, databases, and project management. AI-powered writing tools, drag-and-drop pages, and real-time collaboration make it a productivity powerhouse.",
-    "category": "Productivity",
     "install_label": "Install Now"
   },
   {
@@ -392,7 +375,6 @@
       "1_star": 15000
     },
     "description": "Microsoft Copilot is an AI assistant embedded across Microsoft 365 tools. Automate documentation, generate content, analyze data in Excel, and draft emails with intelligent context-aware suggestions.",
-    "category": "AI & Productivity",
     "install_label": "Install Now"
   },
   {
@@ -414,7 +396,6 @@
       "1_star": 32000
     },
     "description": "Slack is a team communication platform with AI-powered message summaries, Focus Mode, and Voice Huddles. Organize conversations in channels, automate workflows, and integrate with 2,600+ apps.",
-    "category": "Productivity",
     "install_label": "Install Now"
   },
   {
@@ -436,7 +417,6 @@
       "1_star": 95000
     },
     "description": "Uber Eats delivers food from your favorite restaurants straight to your door. AI-powered predictive ordering, real-time tracking, and exclusive deals make every meal effortless.",
-    "category": "Food & Delivery",
     "install_label": "Install Now"
   },
   {
@@ -458,7 +438,6 @@
       "1_star": 22000
     },
     "description": "Revolut is a digital banking app for multi-currency accounts, international transfers, stock trading, and crypto. Smart budgeting tools and instant spending notifications help manage your finances.",
-    "category": "Fintech",
     "install_label": "Install Now"
   },
   {
@@ -480,7 +459,6 @@
       "1_star": 25000
     },
     "description": "Robinhood offers commission-free stock, ETF, options, and crypto trading. Real-time market data, fractional shares, and an intuitive UI make investing accessible for beginners and experts alike.",
-    "category": "Fintech",
     "install_label": "Install Now"
   },
   {
@@ -502,7 +480,6 @@
       "1_star": 35000
     },
     "description": "Strava is the ultimate activity tracking app for runners, cyclists, and outdoor athletes. Log workouts, analyze performance stats, join challenges, and connect with a global community of 120M+ athletes.",
-    "category": "Health & Fitness",
     "install_label": "Install Now"
   },
   {
@@ -524,7 +501,6 @@
       "1_star": 18000
     },
     "description": "Headspace is a leading meditation and mindfulness app with guided sessions for stress, anxiety, sleep, and focus. AI-powered daily recommendations personalize your mental wellness journey.",
-    "category": "Health & Wellness",
     "install_label": "Install Now"
   },
   {
@@ -546,7 +522,6 @@
       "1_star": 10000
     },
     "description": "AllTrails is the go-to hiking and trail navigation app with 400,000+ trails worldwide. Offline maps, custom routes, community reviews, and Outdoor Lens AR help you explore nature safely.",
-    "category": "Travel & Outdoors",
     "install_label": "Install Now"
   }
 ]
