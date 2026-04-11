@@ -1,22 +1,11 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 import { Link } from "react-router";
 import Card from "./../../ui/Card";
 import { RingLoader } from "react-spinners";
+import useApps from "../../hooks/useApps";
 
 const TrendingPage = () => {
-  const [apps, setApps] = useState([]);
-  const [loading, setLoading] = useState(true);
-
-  useEffect(() => {
-    const fetchData = async () => {
-      const res = await fetch("/apps.json");
-      const data = await res.json();
-      setApps(data);
-      setLoading(false);
-    };
-    fetchData();
-  }, []);
-
+  const { apps, loading } = useApps();
   return (
     <div className="container mx-auto py-20">
       <div className="space-y-4 flex justify-center flex-col items-center pb-10">
@@ -32,8 +21,8 @@ const TrendingPage = () => {
         </div>
       ) : (
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 px-4 md:px-0">
-          {apps.slice(0, 8).map((homeCard, index) => {
-            return <Card cardData={homeCard} key={index} />;
+          {apps.slice(0, 8).map((cardData, index) => {
+            return <Card cardData={cardData} key={index} />;
           })}
         </div>
       )}
