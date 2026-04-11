@@ -32,16 +32,22 @@ const Navbar = () => {
             </div>
             <ul
               tabIndex="-1"
-              className="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-6 space-y-2  shadow"
+              className="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52  shadow"
             >
               <li>
-                <MyNavLink to="/">Home</MyNavLink>
+                <MyNavLink to="/" className={"border-none "}>
+                  Home
+                </MyNavLink>
               </li>
               <li>
-                <MyNavLink to="/apps">Apps</MyNavLink>
+                <MyNavLink to="/apps" className={"border-none "}>
+                  Apps
+                </MyNavLink>
               </li>
               <li>
-                <MyNavLink to="/install">Installation</MyNavLink>
+                <MyNavLink to="/install" className={"border-none "}>
+                  Installation
+                </MyNavLink>
               </li>
             </ul>
           </div>
