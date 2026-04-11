@@ -3,17 +3,27 @@ import { HiOutlineDownload } from "react-icons/hi";
 import { FaStar } from "react-icons/fa";
 import { BiSolidLike } from "react-icons/bi";
 import AppDetailsCharts from "../../components/pages/barCharts/AppDetailsCharts";
-import { Link, useLoaderData, useParams } from "react-router";
+import { Link, useParams } from "react-router";
 import { toast } from "react-toastify";
+import useApps from "../../hooks/useApps";
+import { RingLoader } from "react-spinners";
 
 const AppDetails = () => {
   const { id } = useParams();
-  const data = useLoaderData();
+  const { apps, loading } = useApps();
   const [btnIsSelect, setBtnIsSelect] = useState(false);
 
-  //generating bar chartData
-  const obj = data.find((item) => item.id === parseInt(id));
+  //for handling undefined data with loading spinners
+  if (loading) {
+    return (
+      <div className="py-20 flex justify-center items-center">
+        <RingLoader color="#000" />
+      </div>
+    );
+  }
 
+  //generating bar chartData
+  const obj = apps.find((item) => item.id === parseInt(id));
   const barChartData = Object.entries(obj.ratings_breakdown).map(
     ([key, value]) => ({
       star: key.replace("_star", " star"),
@@ -23,7 +33,6 @@ const AppDetails = () => {
 
   const handleInstallButton = () => {
     const newData = JSON.parse(localStorage.getItem("selectItem")) || [];
-
     const isExistingApps = newData.find((item) => item.id === obj.id);
     if (isExistingApps) {
       toast.error(`${obj.name} Already Installed`);
