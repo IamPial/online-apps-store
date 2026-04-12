@@ -57,7 +57,7 @@
 online-apps-store/
 ├── public/
 │   ├── apps.json                    # All apps data
-│   └── home.json                    # Trending apps data
+│
 ├── src/
 │   ├── assets/
 │   │   └── images/
