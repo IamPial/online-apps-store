@@ -56,53 +56,54 @@
 ```
 online-apps-store/
 ├── public/
-│   ├── apps.json                    # All apps data
-│
+│   ├── apps.json
+│   └── favicon.png
 ├── src/
 │   ├── assets/
-│   │   └── images/
-│   │       ├── logo.png
-│   │       ├── hero.png
-│   │       ├── play.png
-│   │       ├── app.png
-│   │       ├── App-Error.png
-│   │       └── error-404.png
 │   ├── components/
-│   │   ├── shared/
-│   │   │   ├── Navbar.jsx
-│   │   │   └── Footer.jsx
-│   │   └── pages/
-│   │       ├── barCharts/
-│   │       │   └── AppDetailsCharts.jsx
-│   │       ├── counterPage/
-│   │       │   └── Counter.jsx
-│   │       └── trendingPage/
-│   │           └── TrendingPage.jsx
+│   │   ├── homepage/
+│   │   │   ├── Banner.jsx
+│   │   │   ├── StatsSection.jsx
+│   │   │   └── TrendingPage.jsx
+│   │   └── shared/
+│   │       ├── Charts.jsx
+│   │       ├── Footer.jsx
+│   │       ├── MyNavLink.jsx
+│   │       ├── Navbar.jsx
+│   │       └── Stats.jsx
+│   ├── context/
+│   │   ├── AppContext.jsx
+│   │   └── AppContextProvider.jsx
+│   ├── hooks/
+│   │   └── useApps.jsx
 │   ├── layout/
 │   │   └── RootLayout.jsx
 │   ├── pages/
-│   │   ├── homepage/
-│   │   │   └── HomePage.jsx
 │   │   ├── apps/
 │   │   │   └── Apps.jsx
 │   │   ├── details/
 │   │   │   └── AppDetails.jsx
+│   │   ├── error/
+│   │   │   └── ErrorPage.jsx
+│   │   ├── homepage/
+│   │   │   └── HomePage.jsx
 │   │   ├── installation/
 │   │   │   └── Installation.jsx
 │   │   └── NotFoundPage/
-│   │       ├── NotFoundPage.jsx
 │   │       └── AppFoundErrorPage.jsx
 │   ├── routes/
 │   │   └── Routes.jsx
 │   ├── ui/
-│   │   ├── Card.jsx
-│   │   └── homeCard.jsx
-│   ├── main.jsx
-│   └── index.css
+│   │   └── Card.jsx
+│   ├── index.css
+│   └── main.jsx
 ├── .gitignore
+├── eslint.config.js
+├── index.html
 ├── package.json
-├── netlify.toml
-└── README.md
+├── README.md
+├── vercel.json
+└── vite.config.js
 ```
 
 ---
